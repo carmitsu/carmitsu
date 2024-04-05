@@ -1,5 +1,5 @@
 'use server';
-import lang from './lang/en.json';
+import lang from './lang/pl.json';
 
 function validateLang(lang: Lang) {
   if (!lang.navbar) {
@@ -22,7 +22,7 @@ interface Navbar {
   home: string;
   about: string;
   contact: string;
-  language: {
+  languageList: {
     [key: string]: string[];
   };
 }

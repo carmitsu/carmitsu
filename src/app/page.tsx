@@ -1,5 +1,5 @@
 'use server';
-import Navigation from "@/components/header";
+import Navigation from "@/components/navbar";
 import {getLanguage} from "@/utils/language";
 
 export default async function Home() {

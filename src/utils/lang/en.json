@@ -5,7 +5,7 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact",
-    "language": {
+    "languageList": {
       "en": ["English","https://carmitsu.com"],
       "pl": ["Polish", "https://carmitsu.pl"],
       "se": ["Swedish", "https://carmitsu.se"],

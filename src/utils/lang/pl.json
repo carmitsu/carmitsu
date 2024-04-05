@@ -1,7 +1,15 @@
 {
+  "language": "pl",
+  "description": "Something",
   "navbar": {
     "home": "Start",
-    "about": "O Firmie",
-    "contact": "Kontact"
+    "about": "O nas",
+    "contact": "Kontakt",
+    "languageList": {
+      "en": ["Angielski","https://carmitsu.com"],
+      "pl": ["Polski", "https://carmitsu.pl"],
+      "se": ["Szwedzki", "https://carmitsu.se"],
+      "no": ["Norwedzki", "https://carmitsu.no"]
+    }
   }
 }
