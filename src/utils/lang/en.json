@@ -1,0 +1,15 @@
+{
+  "language": "en",
+  "description": "Something",
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "language": {
+      "en": ["English","https://carmitsu.com"],
+      "pl": ["Polish", "https://carmitsu.pl"],
+      "se": ["Swedish", "https://carmitsu.se"],
+      "no": ["Norwegian", "https://carmitsu.no"]
+    }
+  }
+}
