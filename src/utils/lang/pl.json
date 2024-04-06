@@ -6,10 +6,10 @@
     "about": "O nas",
     "contact": "Kontakt",
     "languageList": {
-      "en": ["Angielski", "https://carmitsu.com"],
+      "en": ["English","https://carmitsu.com"],
       "pl": ["Polski", "https://carmitsu.pl"],
-      "se": ["Szwedzki", "https://carmitsu.se"],
-      "no": ["Norweski", "https://carmitsu.no"]
+      "se": ["Svenska", "https://carmitsu.se"],
+      "no": ["Norsk", "https://carmitsu.no"]
     }
   },
   "contact": {

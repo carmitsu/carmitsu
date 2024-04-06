@@ -1,9 +1,12 @@
 'use server';
-import lang from './lang/en.json';
+import lang from './lang/pl.json';
 
 function validateLang(lang: Lang) {
   if (!lang.navbar) {
     throw new Error('Navbar is missing');
+  }
+  if (!lang.contact) {
+    throw new Error('Contact is missing');
   }
 }
 

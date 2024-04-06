@@ -7,9 +7,9 @@
     "contact": "Contact",
     "languageList": {
       "en": ["English","https://carmitsu.com"],
-      "pl": ["Polish", "https://carmitsu.pl"],
-      "se": ["Swedish", "https://carmitsu.se"],
-      "no": ["Norwegian", "https://carmitsu.no"]
+      "pl": ["Polski", "https://carmitsu.pl"],
+      "se": ["Svenska", "https://carmitsu.se"],
+      "no": ["Norsk", "https://carmitsu.no"]
     }
   },
   "contact": {
