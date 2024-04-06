@@ -1,17 +1,13 @@
 'use client';
 import {Lang} from "@/utils/language";
-import {MapContainer} from 'react-leaflet/MapContainer'
-import {TileLayer} from 'react-leaflet/TileLayer'
-import {Marker} from "react-leaflet";
-import {Icon} from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import {Input, Textarea, Button} from "@nextui-org/react";
 import axios from "axios";
 import {toast as toaster} from "sonner";
+import dynamic from 'next/dynamic';
+const Map = dynamic(() => import('@/components/map'), {ssr: false});
 
 export default function Contact({contact}: Lang) {
-  const position: any = [54.452847, 18.402047];
-  const marker: string = "/icons/marker.svg";
   return (
     <section id="Contact" className="grid grid-cols-1 md:grid-cols-2 h-[700px]">
       <div className="grid items-center justify-center">
@@ -63,11 +59,7 @@ export default function Contact({contact}: Lang) {
           </form>
         </div>
       </div>
-      <MapContainer center={position} zoom={12}>
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-        <Marker position={position} icon={new Icon({iconUrl: marker, iconSize: [32, 32], iconAnchor: [12, 41]})}>
-        </Marker>
-      </MapContainer>
+      <Map/>
     </section>
   );
 }
