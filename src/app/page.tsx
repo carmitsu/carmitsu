@@ -1,5 +1,7 @@
 'use server';
 import Navigation from "@/components/navbar";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import {getLanguage} from "@/utils/language";
 
 export default async function Home() {
@@ -8,8 +10,10 @@ export default async function Home() {
   return (
     <main>
       <Navigation navbar={data.navbar} language={data.language}/>
-      <div className="h-dvh bg-blue-600"></div>
+      {/*<div className="h-dvh bg-blue-600"></div>*/}
       <div className="h-dvh bg-red-600"></div>
+      <Contact contact={data.contact}/>
+      <Footer/>
     </main>
   );
 }

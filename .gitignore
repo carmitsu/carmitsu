@@ -37,3 +37,10 @@ next-env.d.ts
 
 # IDE
 /.idea
+
+# env
+.env
+.env.local
+
+# lock
+*.lock*
