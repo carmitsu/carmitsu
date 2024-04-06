@@ -35,9 +35,9 @@ interface Contact {
   email: string[];
   workingHours: string[];
   form: {
-    name: string;
-    email: string;
-    phone: string;
+    name: string[];
+    email: string[];
+    phone: string[];
     message: string[];
     submit: string;
   };

@@ -26,24 +26,24 @@ export default function Contact({contact}: Lang) {
               <Input
                 id="name"
                 type="text"
-                label={contact?.form.name}
-                placeholder={contact?.form.name}
+                label={contact?.form.name[0]}
+                placeholder={contact?.form.name[1]}
                 variant="faded"
                 isRequired
               />
               <Input
                 id="email"
                 type="email"
-                label={contact?.form.email}
-                placeholder={contact?.form.email}
+                label={contact?.form.email[0]}
+                placeholder={contact?.form.email[1]}
                 variant="faded"
                 isRequired
               />
               <Input
                 id="phone"
                 type="tel"
-                label={contact?.form.phone}
-                placeholder={contact?.form.phone}
+                label={contact?.form.phone[0]}
+                placeholder={contact?.form.phone[1]}
                 variant="faded"
               />
             </div>

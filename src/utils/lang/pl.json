@@ -1,15 +1,33 @@
 {
   "language": "pl",
-  "description": "Something",
+  "description": "Coś",
   "navbar": {
-    "home": "Start",
+    "home": "Strona główna",
     "about": "O nas",
     "contact": "Kontakt",
     "languageList": {
-      "en": ["Angielski","https://carmitsu.com"],
+      "en": ["Angielski", "https://carmitsu.com"],
       "pl": ["Polski", "https://carmitsu.pl"],
       "se": ["Szwedzki", "https://carmitsu.se"],
-      "no": ["Norwedzki", "https://carmitsu.no"]
+      "no": ["Norweski", "https://carmitsu.no"]
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "location": "Kowalska 12, 84-208 Dobrzewino, Polska",
+    "phone": ["Numer:", "+48 692 886 336"],
+    "email": ["E-mail:", "biuro@carmitsu.pl"],
+    "workingHours": ["Godziny pracy:", "8:00-16:00"],
+    "form": {
+      "name": ["Imię", "Twoje imię"],
+      "email": ["E-mail", "Twój e-mail"],
+      "phone": ["Telefon", "Twój telefonu"],
+      "message": ["Wiadomość", "Wpisz tutaj swoją wiadomość..."],
+      "submit": "Wyślij"
+    },
+    "toast": {
+      "success": "Wiadomość została pomyślnie wysłana",
+      "error": "Wystąpił błąd podczas wysyłania wiadomości"
     }
   }
 }

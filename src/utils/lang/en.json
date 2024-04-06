@@ -19,9 +19,9 @@
     "email": ["E-Mail:", "biuro@carmitsu.pl"],
     "workingHours": ["Working Hours:","8:00-16:00"],
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
+      "name": ["Name", "Your name"],
+      "email": ["E-Mail", "Your e-mail"],
+      "phone": ["Phone", "Your phone"],
       "message": ["Message", "Enter your message here..."],
       "submit": "Submit"
     },
