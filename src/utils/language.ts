@@ -8,6 +8,9 @@ function validateLang(lang: Lang) {
   if (!lang.contact) {
     throw new Error('Contact is missing');
   }
+  if (!lang.footer) {
+    throw new Error('Footer is missing');
+  }
 }
 
 export async function getLanguage(): Promise<Lang> {

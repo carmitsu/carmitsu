@@ -9,7 +9,7 @@ const Map = dynamic(() => import('@/components/map'), {ssr: false});
 
 export default function Contact({contact}: Lang) {
   return (
-    <section id="Contact" className="grid grid-cols-1 md:grid-cols-2 h-[700px]">
+    <section id="Contact" className="grid grid-cols-1 md:grid-cols-2 max-md:min-h-[1000px] md:h-[500px]">
       <div className="grid items-center justify-center p-1">
         <div className="text-center space-y-6">
           <div className="space-y-2">
@@ -51,7 +51,7 @@ export default function Contact({contact}: Lang) {
               id="message"
               label={contact?.form.message[0]}
               placeholder={contact?.form.message[1]}
-              className="w-full"
+              className="w-full h-max"
               variant="faded"
               isRequired
             />
