@@ -1,6 +1,5 @@
 'use client';
 import {Lang} from "@/utils/language";
-import Link from "next/link";
 
 export default function Footer({footer}: Lang) {
   const currentYear = new Date().getFullYear();
@@ -13,7 +12,7 @@ export default function Footer({footer}: Lang) {
             <a href="#" className="hover:underline me-4 md:me-6">{footer?.about}</a>
           </li>
           <li>
-            <a href="#" className="hover:underline me-4 md:me-6">{footer?.privacy}</a>
+            <a href="/privacy" className="hover:underline me-4 md:me-6">{footer?.privacy}</a>
           </li>
         </ul>
       </div>

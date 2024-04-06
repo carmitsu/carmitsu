@@ -21,17 +21,17 @@ export default function Navigation({navbar, language}: Lang) {
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#" className="font-medium">
+          <Link color="foreground" href="/#" className="font-medium">
             {navbar?.home}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#About" className="font-medium">
+          <Link color="foreground" href="/#About" className="font-medium">
             {navbar?.about}
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#Contact" className="font-medium">
+          <Link color="foreground" href="/#Contact" className="font-medium">
             {navbar?.contact}
           </Link>
         </NavbarItem>
@@ -66,17 +66,17 @@ export default function Navigation({navbar, language}: Lang) {
       </NavbarContent>
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link color="foreground" href="#" className="text-xl">
+          <Link color="foreground" href="/#" className="text-xl">
             {navbar?.home}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="#About" className="text-xl">
+          <Link color="foreground" href="/#About" className="text-xl">
             {navbar?.about}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="#Contact" className="text-xl">
+          <Link color="foreground" href="/#Contact" className="text-xl">
             {navbar?.contact}
           </Link>
         </NavbarMenuItem>

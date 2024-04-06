@@ -1,5 +1,6 @@
 'use server';
-import lang from './lang/pl.json';
+const lang = require('./lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.json');
+console.log(`Server is starting with language: ${process.env.SITE_LANGUAGE}`);
 
 function validateLang(lang: Lang) {
   if (!lang.navbar) {
@@ -10,6 +11,9 @@ function validateLang(lang: Lang) {
   }
   if (!lang.footer) {
     throw new Error('Footer is missing');
+  }
+  if (!lang.hero) {
+    throw new Error('Hero is missing');
   }
 }
 
@@ -22,6 +26,7 @@ export interface Lang{
   language?: string;
   description?: string;
   navbar?: Navbar;
+  hero?: Hero;
   contact?: Contact;
   footer?: Footer;
 }
@@ -33,6 +38,10 @@ interface Navbar {
   languageList: {
     [key: string]: string[];
   };
+}
+
+interface Hero {
+
 }
 
 interface Contact {

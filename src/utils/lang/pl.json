@@ -12,6 +12,12 @@
       "no": ["Norsk", "https://carmitsu.no"]
     }
   },
+  "hero": {
+    "title": "Carmitsu",
+    "subtitle": "Najlepsze produkty z drewna",
+    "description": "Nasza firma zajmuje się produkcją i sprzedażą produktów z drewna. W naszej ofercie znajdziesz meble, zabawki, narzędzia i wiele innych. Zapraszamy do zapoznania się z naszą ofertą.",
+    "button": "Zobacz ofertę"
+  },
   "contact": {
     "title": "Kontakt",
     "location": "Kowalska 12, 84-208 Dobrzewino, Polska",
@@ -21,7 +27,7 @@
     "form": {
       "name": ["Imię", "Twoje imię"],
       "email": ["E-mail", "Twój e-mail"],
-      "phone": ["Telefon", "Twój telefonu"],
+      "phone": ["Telefon", "Twój telefon"],
       "message": ["Wiadomość", "Wpisz tutaj swoją wiadomość..."],
       "submit": "Wyślij"
     },
