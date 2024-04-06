@@ -20,6 +20,7 @@ export interface Lang{
   description?: string;
   navbar?: Navbar;
   contact?: Contact;
+  footer?: Footer;
 }
 
 interface Navbar {
@@ -48,4 +49,10 @@ interface Contact {
     success: string;
     error: string;
   }
+}
+
+interface Footer {
+  rights: string;
+  about: string;
+  privacy: string;
 }

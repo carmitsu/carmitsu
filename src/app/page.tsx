@@ -13,7 +13,7 @@ export default async function Home() {
       {/*<div className="h-dvh bg-blue-600"></div>*/}
       <div className="h-dvh bg-red-600"></div>
       <Contact contact={data.contact}/>
-      <Footer/>
+      <Footer footer={data.footer}/>
     </main>
   );
 }

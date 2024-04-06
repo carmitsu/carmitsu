@@ -29,5 +29,10 @@
       "success": "Wiadomość została pomyślnie wysłana",
       "error": "Wystąpił błąd podczas wysyłania wiadomości"
     }
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone",
+    "about": "O nas",
+    "privacy": "Polityka prywatności"
   }
 }
