@@ -6,7 +6,7 @@ import HeroBackground from "@/components/images/hero.jpg";
 export default function Hero({hero}: Lang) {
   return (
     <section className="h-dvh relative grid items-center">
-      <Image src={HeroBackground} alt="Hero background" layout="fill"
+      <Image src={HeroBackground} alt="Hero background" layout="fill" placeholder={"blur"}
              className="object-center object-cover pointer-events-none blur-sm brightness-50"/>
       <div className="text-center z-1 relative">
         <div className="relative bottom-5">
