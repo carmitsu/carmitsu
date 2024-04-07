@@ -41,7 +41,9 @@ interface Navbar {
 }
 
 interface Hero {
-
+  title: string;
+  subtitle: string;
+  button: string;
 }
 
 interface Contact {
