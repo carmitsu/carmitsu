@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Button} from "@nextui-org/react";
+import {Button, Link} from "@nextui-org/react";
 import {Lang} from "@/utils/language";
 import HeroBackground from "@/components/images/hero.jpg";
 
@@ -13,7 +13,7 @@ export default function Hero({hero}: Lang) {
           <h1 className="text-7xl md:text-9xl font-medium tracking-tight">{hero?.title}</h1>
           <p className="text-lg md:text-xl">{hero?.subtitle}</p>
         </div>
-        <Button size="lg" color="primary" variant="flat" className="relative top-48">{hero?.button}</Button>
+        <Button size="lg" color="primary" variant="flat" className="relative top-48" href="#About" as={Link}>{hero?.button}</Button>
       </div>
     </section>
   );

@@ -13,10 +13,9 @@
     }
   },
   "hero": {
-    "title": "Carmitsu",
-    "subtitle": "Najlepsze produkty z drewna",
-    "description": "Nasza firma zajmuje się produkcją i sprzedażą produktów z drewna. W naszej ofercie znajdziesz meble, zabawki, narzędzia i wiele innych. Zapraszamy do zapoznania się z naszą ofertą.",
-    "button": "Zobacz ofertę"
+    "title": "CarMitsu",
+    "subtitle": "Car mechanics",
+    "button": "Check more"
   },
   "contact": {
     "title": "Contact",
@@ -39,6 +38,7 @@
   "footer": {
     "rights": "All rights reserved",
     "about": "About",
+    "contact": "Contact",
     "privacy": "Privacy Policy"
   }
 }

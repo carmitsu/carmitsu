@@ -68,5 +68,6 @@ interface Contact {
 interface Footer {
   rights: string;
   about: string;
+  contact: string;
   privacy: string;
 }

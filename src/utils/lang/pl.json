@@ -15,7 +15,7 @@
   "hero": {
     "title": "CarMitsu",
     "subtitle": "Mechanika samochodowa",
-    "button": "Zobacz ofertę"
+    "button": "Zobacz więcej"
   },
   "contact": {
     "title": "Kontakt",
@@ -38,6 +38,7 @@
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone",
     "about": "O nas",
+    "contact": "Kontakt",
     "privacy": "Polityka prywatności"
   }
 }

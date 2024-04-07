@@ -9,7 +9,10 @@ export default function Footer({footer}: Lang) {
         <span className="text-sm sm:text-center ">© {currentYear} CarMitsu. {footer?.rights}.</span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium sm:mt-0">
           <li>
-            <a href="#" className="hover:underline me-4 md:me-6">{footer?.about}</a>
+            <a href="/#About" className="hover:underline me-4 md:me-6">{footer?.about}</a>
+          </li>
+          <li>
+            <a href="/#Contact" className="hover:underline me-4 md:me-6">{footer?.contact}</a>
           </li>
           <li>
             <a href="/privacy" className="hover:underline me-4 md:me-6">{footer?.privacy}</a>
