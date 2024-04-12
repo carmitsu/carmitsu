@@ -1,13 +1,13 @@
 'use client';
 import Services from "@/components/services";
 import Image from "next/image";
-import l200_2 from "@/components/images/about.jpeg";
+import aboutImage from "@/components/images/about.jpeg";
 import {Skeleton} from "@nextui-org/react";
 import {useState} from "react";
 import {Lang} from "@/utils/language";
 
 export default function About({about}: Lang) {
-  const [aboutImage, setAboutImage] = useState(false);
+  const [isAboutImage, setAboutImage] = useState(false);
 
   return (
     <section className="px-6 md:px-14 mt-20 flex flex-col items-center space-y-16" id="About">
@@ -19,8 +19,8 @@ export default function About({about}: Lang) {
             <p className="lg:max-w-[40rem]">{about?.about.description[1]}</p>
           </div>
         </div>
-        <Skeleton className="rounded-xl relative" isLoaded={aboutImage}>
-          <Image src={l200_2} alt="car" fill={true} className="object-center object-cover pointer-events-none"
+        <Skeleton className="rounded-xl relative" isLoaded={isAboutImage}>
+          <Image src={aboutImage} alt="l22" fill={true} className="object-center object-cover pointer-events-none"
                  onLoad={() => setAboutImage(true)}/>
         </Skeleton>
       </div>
