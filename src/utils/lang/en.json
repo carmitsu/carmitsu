@@ -10,12 +10,53 @@
       "pl": ["Polski", "https://carmitsu.pl"],
       "se": ["Svenska", "https://carmitsu.se"],
       "no": ["Norsk", "https://carmitsu.no"]
+    },
+    "more": {
+      "title": "More",
+      "parts": "Car parts",
+      "realizations": "Realizations"
     }
   },
   "hero": {
     "title": "CarMitsu",
     "subtitle": "Car mechanics",
     "button": "Check more"
+  },
+  "about": {
+    "about": {
+      "title": "Specialized Mitsubishi Car Service",
+      "description": ["CarMitsu is an automotive company with years of experience specializing in the repair and servicing of Mitsubishi vehicles. Our history began with a passion for legendary off-road vehicles: the Mitsubishi Pajero, L200, and Hyundai Galloper. This passion has evolved into a professional service that today offers high-quality services for a wide range of Mitsubishi vehicles.",
+        "At CarMitsu, we understand that your Mitsubishi car is more than just a means of transportation – it's a part of your lifestyle. As an independent service specializing in the Mitsubishi brand, we offer a full range of services to ensure that your vehicle is always in excellent condition and ready for any adventure."]
+    },
+    "services": {
+      "title": "What Can We Do for You?",
+      "servicesList": {
+        "carOverview": {
+          "title": "Routine and Periodic Inspection and Repair",
+          "description": "Engine and gearbox, suspension, timing belt, clutch, braking system..."
+        },
+        "guaranteeOverview": {
+          "title": "Car Inspection During Warranty Period",
+          "description": "Checking the technical condition of all car systems while maintaining the warranty"
+        },
+        "computerDiagnostics": {
+          "title": "Computer Diagnostics",
+          "description": "Quick and accurate assessment of the technical condition of individual vehicle systems and components"
+        },
+        "carElectric": {
+          "title": "Car Electrics",
+          "description": "Electromechanics, automotive electrical systems, controller repair"
+        },
+        "oilChange": {
+          "title": "Oil and Consumables Replacement",
+          "description": "Engine, gearbox, differential, power steering system"
+        },
+        "airConditioning": {
+          "title": "Air Conditioning Service",
+          "description": "Regardless of the season, your air conditioning will work flawlessly thanks to our specialized services"
+        }
+      }
+    }
   },
   "contact": {
     "title": "Contact",
@@ -25,8 +66,8 @@
     "workingHours": ["Working Hours:","8:00-16:00"],
     "form": {
       "name": ["Name", "Your name"],
-      "email": ["E-Mail", "Your e-mail"],
-      "phone": ["Phone", "Your phone"],
+      "email": ["E-Mail", "Your e-mail adress"],
+      "phone": ["Phone", "Your phone number"],
       "message": ["Message", "Enter your message here..."],
       "submit": "Submit"
     },
