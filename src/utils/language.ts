@@ -27,6 +27,7 @@ export interface Lang{
   description?: string;
   navbar?: Navbar;
   hero?: Hero;
+  about?: About;
   contact?: Contact;
   footer?: Footer;
 }
@@ -37,13 +38,54 @@ interface Navbar {
   contact: string;
   languageList: {
     [key: string]: string[];
-  };
+  }
+  more: {
+    title: string;
+    parts: string;
+    realizations: string;
+  }
 }
 
 interface Hero {
   title: string;
   subtitle: string;
   button: string;
+}
+
+interface About {
+  about: {
+    title: string;
+    description: string[];
+  }
+  services: {
+    title: string;
+    servicesList: {
+      carOverview: {
+        title: string;
+        description: string;
+      },
+      guaranteeOverview: {
+        title: string;
+        description: string;
+      },
+      computerDiagnostics: {
+        title: string;
+        description: string;
+      },
+      carElectric: {
+        title: string;
+        description: string;
+      },
+      oilChange: {
+        title: string;
+        description: string;
+      },
+      airConditioning: {
+        title: string;
+        description: string;
+      }
+    }
+  }
 }
 
 interface Contact {
@@ -58,7 +100,7 @@ interface Contact {
     phone: string[];
     message: string[];
     submit: string;
-  };
+  }
   toast: {
     success: string;
     error: string;

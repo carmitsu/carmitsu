@@ -10,12 +10,53 @@
       "pl": ["Polski", "https://carmitsu.pl"],
       "se": ["Svenska", "https://carmitsu.se"],
       "no": ["Norsk", "https://carmitsu.no"]
+    },
+    "more": {
+      "title": "Więcej",
+      "parts": "Części samochodowe",
+      "realizations": "Realizacje"
     }
   },
   "hero": {
     "title": "CarMitsu",
     "subtitle": "Mechanika samochodowa",
     "button": "Zobacz więcej"
+  },
+  "about": {
+    "about": {
+      "title": "Specjalistyczny Serwis Samochodów Mitsubishi",
+      "description": ["CarMitsu to firma motoryzacyjna z wieloletnim doświadczeniem , która specjalizuje się w naprawie i serwisowaniu samochodów marki Mitsubishi . Nasza historia zaczęła się od pasji do legendarnych samochodów terenowych: Mitsubishi Pajero, L200 oraz Hyundai Galloper. Ta pasja przekształciła się w profesjonalny serwis, który dziś oferuje najwyższej jakości usługi dla szerokiej gamy pojazdów Mitsubishi.",
+      "W CarMitsu rozumiemy, że Twój samochód Mitsubishi to więcej niż tylko środek transportu – to część Twojego stylu życia. Jako niezależny serwis specjalizujący się w marce Mitsubishi, oferujemy pełen zakres usług, aby Twój pojazd był zawsze w doskonałym stanie i gotowy na każdą przygodę."]
+    },
+    "services": {
+      "title": "Co możemy dla ciebie zrobić?",
+      "servicesList": {
+        "carOverview": {
+          "title": "Przegląd i naprawa bieżąca oraz okresowa",
+          "description": "Silnik i skrzyni biegów, zawieszenie, rozrząd, sprzęgło, układ hamulcowy..."
+        },
+        "guaranteeOverview": {
+          "title": "Przegląd samochodu w okresie gwarancyjnym",
+          "description": "Kontrola stanu technicznego wszystkich układów samochodu z zachowaniem gwarancji"
+        },
+        "computerDiagnostics": {
+          "title": "Diagnostyka komputerowa",
+          "description": "Szybka i bezbłędna ocena stanu technicznego poszczególnych układów i zespołów pojazdu"
+        },
+        "carElectric": {
+          "title": "Elektryka samochodowa",
+          "description": "Elektromechanika, elektryka samochodowa, naprawa sterowników"
+        },
+        "oilChange": {
+          "title": "Wymiana oleju i płynów eksploatacyjnych",
+          "description": "Silnik, skrzynia biegów, dyferencjał mechanizm różnicowy, układ wspomagania kierownicy"
+        },
+        "airConditioning": {
+          "title": "Obsługa klimatyzacji",
+          "description": "Niezależnie od pory roku, Twoja klimatyzacja będzie działać bez zarzutu dzięki naszym specjalistycznym usługom"
+        }
+      }
+    }
   },
   "contact": {
     "title": "Kontakt",
@@ -25,8 +66,8 @@
     "workingHours": ["Godziny pracy:", "8:00-16:00"],
     "form": {
       "name": ["Imię", "Twoje imię"],
-      "email": ["E-mail", "Twój e-mail"],
-      "phone": ["Telefon", "Twój telefon"],
+      "email": ["E-mail", "Twój adres e-mail"],
+      "phone": ["Telefon", "Twój numer telefonu"],
       "message": ["Wiadomość", "Wpisz tutaj swoją wiadomość..."],
       "submit": "Wyślij"
     },

@@ -13,7 +13,7 @@ export default async function Home() {
     <main>
       <Navigation navbar={data.navbar} language={data.language}/>
       <Hero hero={data.hero}/>
-      <About/>
+      <About about={data.about}/>
       <Contact contact={data.contact}/>
       <Footer footer={data.footer}/>
     </main>
