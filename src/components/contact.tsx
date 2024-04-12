@@ -9,7 +9,7 @@ const Map = dynamic(() => import('@/components/map'), {ssr: false});
 
 export default function Contact({contact}: Lang) {
   return (
-    <section id="Contact" className="grid grid-cols-1 md:grid-cols-2 max-md:min-h-[600px] md:h-[500px]">
+    <section id="Contact" className="grid grid-cols-1 md:grid-cols-2 max-md:min-h-[600px] md:h-[500px] mt-20">
       <div className="grid items-center justify-center p-2 max-md:py-3 max-md:max-h-[600px]">
         <div className="text-center space-y-6">
           <div className="space-y-2">
@@ -21,7 +21,7 @@ export default function Contact({contact}: Lang) {
               <p>{contact?.workingHours[0]} {contact?.workingHours[1]}</p>
             </div>
           </div>
-          <form className="space-y-2" onSubmit={(event) => handleFormSubmit(event, contact?.toast)}>
+          <form className="space-y-2 lg:w-[480px] xl:w-[600px]" onSubmit={(event) => handleFormSubmit(event, contact?.toast)}>
             <div className="flex space-x-2">
               <Input
                 id="name"
@@ -32,19 +32,22 @@ export default function Contact({contact}: Lang) {
                 isRequired
               />
               <Input
+                id="phone"
+                type="tel"
+                label={contact?.form.phone[0]}
+                placeholder={contact?.form.phone[1]}
+                variant="faded"
+              />
+
+            </div>
+            <div>
+              <Input
                 id="email"
                 type="email"
                 label={contact?.form.email[0]}
                 placeholder={contact?.form.email[1]}
                 variant="faded"
                 isRequired
-              />
-              <Input
-                id="phone"
-                type="tel"
-                label={contact?.form.phone[0]}
-                placeholder={contact?.form.phone[1]}
-                variant="faded"
               />
             </div>
             <Textarea

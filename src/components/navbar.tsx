@@ -35,6 +35,17 @@ export default function Navigation({navbar, language}: Lang) {
             {navbar?.contact}
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Dropdown>
+            <DropdownTrigger>
+              <Link color="foreground" className="font-medium">{navbar?.more.title}</Link>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Static Actions">
+              <DropdownItem key="parts" target="_blank" href="https://carmitsu.otomoto.pl/">{navbar?.more.parts}</DropdownItem>
+              <DropdownItem key="realizations">{navbar?.more.realizations}</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <Dropdown>
@@ -44,7 +55,7 @@ export default function Navigation({navbar, language}: Lang) {
               {selectedLanguage &&
                   <img src={`/flags/${selectedLanguage}.svg`} alt={`${selectedLanguage} Flag`} className="h-4 mr-1"/>}
               {selectedLanguage && navbar?.languageList[selectedLanguage] &&
-                  <span className="font-medium">{navbar.languageList[selectedLanguage][0]}</span>}
+                  <span className="font-medium">{navbar?.languageList[selectedLanguage][0]}</span>}
             </Button>
           </DropdownTrigger>
           <DropdownMenu>
@@ -78,6 +89,16 @@ export default function Navigation({navbar, language}: Lang) {
         <NavbarMenuItem>
           <Link color="foreground" href="/#Contact" className="text-xl">
             {navbar?.contact}
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link color="foreground" className="text-xl" href="https://carmitsu.otomoto.pl/" target="_blank">
+            {navbar?.more.parts}
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link color="foreground" className="text-xl">
+            {navbar?.more.realizations}
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
