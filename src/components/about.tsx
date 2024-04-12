@@ -1,7 +1,7 @@
 'use client';
 import Services from "@/components/services";
 import Image from "next/image";
-import l200_2 from "@/components/images/l200.jpeg";
+import l200_2 from "@/components/images/about.jpeg";
 import {Skeleton} from "@nextui-org/react";
 import {useState} from "react";
 import {Lang} from "@/utils/language";
