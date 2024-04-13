@@ -58,6 +58,10 @@
       }
     }
   },
+  "realizations": {
+    "title": "Nasze realizacje",
+    "more": "Więcej realizacji"
+  },
   "contact": {
     "title": "Kontakt",
     "location": "Kowalska 12, 84-208 Dobrzewino, Polska",

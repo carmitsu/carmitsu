@@ -42,7 +42,7 @@ export default function Navigation({navbar, language}: Lang) {
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions">
               <DropdownItem key="parts" target="_blank" href="https://carmitsu.otomoto.pl/">{navbar?.more.parts}</DropdownItem>
-              <DropdownItem key="realizations">{navbar?.more.realizations}</DropdownItem>
+              <DropdownItem key="realizations" href="/#Realizations">{navbar?.more.realizations}</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
@@ -97,7 +97,7 @@ export default function Navigation({navbar, language}: Lang) {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" className="text-xl">
+          <Link color="foreground" className="text-xl" href="/#Realizations">
             {navbar?.more.realizations}
           </Link>
         </NavbarMenuItem>

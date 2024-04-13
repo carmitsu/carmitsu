@@ -9,6 +9,12 @@ function validateLang(lang: Lang) {
   if (!lang.contact) {
     throw new Error('Contact is missing');
   }
+  if (!lang.about) {
+    throw new Error('About is missing');
+  }
+  if (!lang.realizations) {
+    throw new Error('Realizations is missing');
+  }
   if (!lang.footer) {
     throw new Error('Footer is missing');
   }
@@ -28,6 +34,7 @@ export interface Lang{
   navbar?: Navbar;
   hero?: Hero;
   about?: About;
+  realizations?: Realizations;
   contact?: Contact;
   footer?: Footer;
 }
@@ -86,6 +93,11 @@ interface About {
       }
     }
   }
+}
+
+interface Realizations {
+  title: string;
+  more: string;
 }
 
 interface Contact {
