@@ -3,8 +3,7 @@ import Navigation from "@/components/navbar";
 import Footer from "@/components/footer";
 import {getLanguage} from "@/utils/language";
 import {getRealizations} from "@/utils/realizations";
-import AllRealizations from "@/components/allRealizations";
-import Realizations from "@/components/realizations";
+import AllRealizations from "@/components/realizations/allRealizations";
 
 export default async function Page() {
   const data = await getLanguage();
