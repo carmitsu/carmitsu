@@ -1,28 +1,31 @@
 'use server';
 import fs from 'fs';
 import path from 'path';
-import {promisify} from 'util';
 
-const readdir = promisify(fs.readdir);
-
-export async function getRealizations(): Promise<string[]>{
-  const realizationsDir = path.join(process.cwd(), 'public/realizations');
-  const imageExtensions = ['.png', '.jpg', '.jpeg', '.svg'];
+export async function getRealizations(): Promise<RealizationsData[]> {
+  const realizationsPath = path.join(process.cwd(), 'public/realizations/realizations.json');
 
   try {
-    let files = await readdir(realizationsDir);
-    files = files.filter(file => imageExtensions.includes(path.extname(file)));
+    const data = fs.readFileSync(realizationsPath, 'utf-8');
+    const realizationsData = JSON.parse(data);
 
-    // Get file creation times and sort files by it
-    files.sort((a, b) => {
-      const timeA = fs.statSync(path.join(realizationsDir, a)).birthtime.getTime();
-      const timeB = fs.statSync(path.join(realizationsDir, b)).birthtime.getTime();
-      return timeB - timeA; // sort in descending order
+    realizationsData.forEach((realization: { image: string }) => {
+      realization.image = `/realizations/${realization.image}`;
     });
+    realizationsData.sort((a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-    return files.map(file => `/realizations/${file}`);
+    return realizationsData;
   } catch (err) {
-    console.error('Could not list the directory.', err);
+    console.error('Could not read the file.', err);
     return [];
   }
+}
+
+export interface RealizationsData {
+  [key: string]: {
+    date: string;
+    title: string;
+    description: string;
+    image: string;
+  };
 }
