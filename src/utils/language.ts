@@ -1,5 +1,5 @@
 'use server';
-const lang = require('./lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.json');
+const lang = require('/public/lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.json');
 console.log(`Server is starting with language: ${process.env.SITE_LANGUAGE}`);
 
 function validateLang(lang: Lang) {

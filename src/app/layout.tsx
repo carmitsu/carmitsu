@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import "./main.css";
-import lang from "@/utils/lang/en.json";
+import lang from "../../public/lang/en.json";
 import {Providers} from "./providers";
 import {Toaster} from "sonner";
 

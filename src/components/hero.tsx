@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {Button, Link} from "@nextui-org/react";
 import {Lang} from "@/utils/language";
-import HeroBackground from "@/components/images/hero.jpg";
+import HeroBackground from "/public/images/hero.jpg";
 
 export default function Hero({hero}: Lang) {
   return (
