@@ -39,7 +39,7 @@ function Realization({image, title, description}: { image: string, title: string
         </Skeleton>
       </div>
       <div className="space-y-1">
-        <h1 className="text-2xl">{title}</h1>
+        <h1 className="max-md:text-lg md:text-xl lg:text-2xl">{title}</h1>
         <p className="text-foreground-500">{description}</p>
       </div>
     </div>
