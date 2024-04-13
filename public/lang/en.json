@@ -58,6 +58,10 @@
       }
     }
   },
+  "realizations": {
+    "title": "Our realizations",
+    "more": "More realizations"
+  },
   "contact": {
     "title": "Contact",
     "location": "Kowalska 12, 84-208 Dobrzewino, Poland",
