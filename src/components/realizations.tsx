@@ -8,7 +8,6 @@ import {RealizationsData} from "@/utils/realizations";
 export default function Realizations({realizations, realizationsData}: Lang & {
   realizationsData: RealizationsData[]
 }) {
-  console.log(realizationsData);
   return (
     <section id="Realizations" className="px-6 md:px-14 pt-24 flex flex-col items-center space-y-5">
       <div className="container space-y-4">
