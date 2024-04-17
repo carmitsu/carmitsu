@@ -25,7 +25,7 @@ function Service({src, alt, title, description}: { src: string, alt: string, tit
   return (
     <div className="bg-default-100 rounded-xl flex items-center justify-center p-2">
       <Skeleton className="rounded-full" isLoaded={isLoaded}>
-        <div className="p-4 rounded-full bg-primary opacity-70">
+        <div className="p-4 rounded-full bg-primary/70">
           <Image src={src} alt={alt} width={64} height={64} onLoad={() => setIsLoaded(true)}/>
         </div>
       </Skeleton>

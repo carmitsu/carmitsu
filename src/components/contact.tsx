@@ -14,10 +14,14 @@ export default function Contact({contact}: Lang) {
         <div className="text-center space-y-6">
           <div className="space-y-2">
             <h1 className="text-4xl">{contact?.title}</h1>
-            <div className="space-y-1">
+            <div className="space-y-1 flex flex-col items-center">
               <p>{contact?.location}</p>
-              <p>{contact?.phone[0]} <a href={`tel:` + contact?.phone[1].replace(/\s+/g, '')} className="text-primary">{contact?.phone[1]}</a></p>
-              <p>{contact?.email[0]} <a href={`mailto:` + contact?.email[1]} className="text-primary">{contact?.email[1]}</a></p>
+              <div className="flex max-lg:flex-col lg:space-x-3">
+                <p>{contact?.phone[0]} <a href={`tel:` + contact?.phone[1].replace(/\s+/g, '')}
+                                          className="text-primary">{contact?.phone[1]}</a></p>
+                <p>{contact?.email[0]} <a href={`mailto:` + contact?.email[1]}
+                                          className="text-primary">{contact?.email[1]}</a></p>
+              </div>
               <p>{contact?.workingHours[0]} {contact?.workingHours[1]}</p>
             </div>
           </div>

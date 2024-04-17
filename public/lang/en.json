@@ -19,7 +19,7 @@
   },
   "hero": {
     "title": "CarMitsu",
-    "subtitle": "Car mechanics",
+    "subtitle": "Your Mitsubishi, Our Passion!",
     "button": "Check more"
   },
   "about": {
@@ -27,6 +27,22 @@
       "title": "Specialized Mitsubishi Car Service",
       "description": ["CarMitsu is an automotive company with years of experience specializing in the repair and servicing of Mitsubishi vehicles. Our history began with a passion for legendary off-road vehicles: the Mitsubishi Pajero, L200, and Hyundai Galloper. This passion has evolved into a professional service that today offers high-quality services for a wide range of Mitsubishi vehicles.",
         "At CarMitsu, we understand that your Mitsubishi car is more than just a means of transportation – it's a part of your lifestyle. As an independent service specializing in the Mitsubishi brand, we offer a full range of services to ensure that your vehicle is always in excellent condition and ready for any adventure."]
+    },
+    "whyUs": {
+      "title": "Why Choose Carmitsu?",
+      "experience": {
+        "title": "Experience:",
+        "description": "Our team of specialists has extensive experience in the industry and constantly enhances their qualifications."
+      },
+      "clients": {
+        "title": "Satisfied Customers:",
+        "description": "Join our growing community of satisfied customers who have trusted our services and expertise."
+      },
+      "passion": {
+        "title": "Passion for Mitsubishi:",
+        "description": "Our work is our passion, which is evident in every detail of our work and in every smile of our customers."
+      },
+      "footer": "Contact us today to schedule an appointment. Experience service that combines passion with professionalism and join our community of satisfied customers."
     },
     "services": {
       "title": "What Can We Do for You?",
@@ -40,8 +56,8 @@
           "description": "Checking the technical condition of all car systems while maintaining the warranty"
         },
         "computerDiagnostics": {
-          "title": "Computer Diagnostics",
-          "description": "Quick and accurate assessment of the technical condition of individual vehicle systems and components"
+          "title": "MUT-3 Computer Diagnostics",
+          "description": "We use our unique MUT-3 diagnostic computer to provide the most accurate diagnosis and quick repair for your Mitsubishi."
         },
         "carElectric": {
           "title": "Car Electrics",

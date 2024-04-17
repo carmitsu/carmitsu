@@ -21,7 +21,7 @@ export default function Realizations({realizations, realizationsData}: Lang & {
           })}
         </div>
       </div>
-      <Button className="w-full lg:w-auto" href="/realizations" as={Link}>
+      <Button className="w-full px-10 lg:w-auto text-md" href="/realizations" as={Link}>
         {realizations?.more}
       </Button>
     </section>

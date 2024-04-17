@@ -1,6 +1,8 @@
 'use client'
 import {Lang} from "@/utils/language";
 import React, {useState} from "react";
+import {RiArrowDownSLine} from "@remixicon/react";
+
 import {
   Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button, Dropdown,
   DropdownTrigger, DropdownMenu, DropdownItem,
@@ -38,7 +40,7 @@ export default function Navigation({navbar, language}: Lang) {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Link color="foreground" className="font-medium">{navbar?.more.title}</Link>
+              <Link color="foreground" className="font-medium" showAnchorIcon={true} anchorIcon={<RiArrowDownSLine/>}>{navbar?.more.title}</Link>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions">
               <DropdownItem key="parts" target="_blank" href="https://carmitsu.otomoto.pl/">{navbar?.more.parts}</DropdownItem>

@@ -3,23 +3,12 @@ const lang = require('/public/lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.jso
 // console.log(`Server is starting with language: ${process.env.SITE_LANGUAGE}`);
 
 function validateLang(lang: Lang) {
-  if (!lang.navbar) {
-    throw new Error('Navbar is missing');
-  }
-  if (!lang.contact) {
-    throw new Error('Contact is missing');
-  }
-  if (!lang.about) {
-    throw new Error('About is missing');
-  }
-  if (!lang.realizations) {
-    throw new Error('Realizations is missing');
-  }
-  if (!lang.footer) {
-    throw new Error('Footer is missing');
-  }
-  if (!lang.hero) {
-    throw new Error('Hero is missing');
+  const requiredFields = Object.keys(lang) as (keyof Lang)[];
+
+  for (const field of requiredFields) {
+    if (!lang[field]) {
+      throw new Error(`${field} is missing`);
+    }
   }
 }
 
@@ -63,6 +52,22 @@ interface About {
   about: {
     title: string;
     description: string[];
+  }
+  whyUs: {
+    "title": string;
+    "experience": {
+      "title": string;
+      "description": string;
+    },
+    "clients": {
+      "title": string;
+      "description": string;
+    },
+    "passion": {
+      "title": string;
+      "description": string;
+    }
+    "footer": string;
   }
   services: {
     title: string;
