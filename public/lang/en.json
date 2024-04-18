@@ -146,5 +146,6 @@
     "about": "About",
     "contact": "Contact",
     "privacy": "Privacy Policy"
-  }
+  },
+  "404": "Page not found"
 }

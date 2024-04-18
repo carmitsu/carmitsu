@@ -27,6 +27,7 @@ export interface Lang{
   realizations?: Realizations;
   contact?: Contact;
   footer?: Footer;
+  404?: string;
 }
 
 interface Seo {
