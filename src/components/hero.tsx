@@ -1,5 +1,6 @@
 import Image from "next/image";
-import {Button, Link} from "@nextui-org/react";
+import {Button} from "@nextui-org/button";
+import {Link} from "@nextui-org/link";
 import {Lang} from "@/utils/language";
 import HeroBackground from "/public/images/hero.jpg";
 
