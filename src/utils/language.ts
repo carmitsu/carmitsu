@@ -1,4 +1,6 @@
 'use server';
+import * as process from "node:process";
+
 const lang = require('/public/lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.json');
 // console.log(`Server is starting with language: ${process.env.SITE_LANGUAGE}`);
 
@@ -19,13 +21,25 @@ export async function getLanguage(): Promise<Lang> {
 
 export interface Lang{
   language?: string;
-  description?: string;
+  seo?: Seo;
   navbar?: Navbar;
   hero?: Hero;
   about?: About;
   realizations?: Realizations;
   contact?: Contact;
   footer?: Footer;
+}
+
+interface Seo {
+  description: string;
+  privacy: {
+    title: string;
+    description: string;
+  }
+  realizations: {
+    title: string;
+    description: string;
+  }
 }
 
 interface Navbar {

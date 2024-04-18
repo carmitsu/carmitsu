@@ -1,15 +1,37 @@
 {
   "language": "pl",
-  "description": "W CarMitsu, nasza specjalność to nie tylko samochody – to pasja i zaangażowanie, które wkładamy w każdy serwisowany przez nas pojazd Mitsubishi. Jesteśmy niezależnym serwisem, który z dumą oferuje kompleksową opiekę nad Twoim autem, łącząc długie doświadczenie z nowoczesną technologią.",
+  "seo": {
+    "description": "W CarMitsu, nasza specjalność to nie tylko samochody – to pasja i zaangażowanie, które wkładamy w każdy serwisowany przez nas pojazd Mitsubishi. Jesteśmy niezależnym serwisem, który z dumą oferuje kompleksową opiekę nad Twoim autem, łącząc długie doświadczenie z nowoczesną technologią.",
+    "privacy": {
+      "title": "Polityka Prywatności",
+      "description": "Zapoznaj się z naszą polityką prywatności, aby dowiedzieć się, jakie dane zbieramy i w jaki sposób je przetwarzamy."
+    },
+    "realizations": {
+      "title": "Nasze Realizacje",
+      "description": "Zobacz nasze realizacje i przekonaj się, dlaczego warto zaufać CarMitsu w serwisowaniu Twojego Mitsubishi."
+    }
+  },
   "navbar": {
     "home": "Strona główna",
     "about": "O nas",
     "contact": "Kontakt",
     "languageList": {
-      "en": ["English","https://carmitsu.com"],
-      "pl": ["Polski", "https://carmitsu.pl"],
-      "se": ["Svenska", "https://carmitsu.se"],
-      "no": ["Norsk", "https://carmitsu.no"]
+      "en": [
+        "English",
+        "https://carmitsu.com"
+      ],
+      "pl": [
+        "Polski",
+        "https://carmitsu.pl"
+      ],
+      "se": [
+        "Svenska",
+        "https://carmitsu.se"
+      ],
+      "no": [
+        "Norsk",
+        "https://carmitsu.no"
+      ]
     },
     "more": {
       "title": "Więcej",
@@ -25,8 +47,10 @@
   "about": {
     "about": {
       "title": "Specjalistyczny Serwis Samochodów Mitsubishi",
-      "description": ["CarMitsu to firma motoryzacyjna z wieloletnim doświadczeniem , która specjalizuje się w naprawie i serwisowaniu samochodów marki Mitsubishi . Nasza historia zaczęła się od pasji do legendarnych samochodów terenowych: Mitsubishi Pajero, L200 oraz Hyundai Galloper. Ta pasja przekształciła się w profesjonalny serwis, który dziś oferuje najwyższej jakości usługi dla szerokiej gamy pojazdów Mitsubishi.",
-      "W CarMitsu rozumiemy, że Twój samochód Mitsubishi to więcej niż tylko środek transportu – to część Twojego stylu życia. Jako niezależny serwis specjalizujący się w marce Mitsubishi, oferujemy pełen zakres usług, aby Twój pojazd był zawsze w doskonałym stanie i gotowy na każdą przygodę."]
+      "description": [
+        "CarMitsu to firma motoryzacyjna z wieloletnim doświadczeniem , która specjalizuje się w naprawie i serwisowaniu samochodów marki Mitsubishi . Nasza historia zaczęła się od pasji do legendarnych samochodów terenowych: Mitsubishi Pajero, L200 oraz Hyundai Galloper. Ta pasja przekształciła się w profesjonalny serwis, który dziś oferuje najwyższej jakości usługi dla szerokiej gamy pojazdów Mitsubishi.",
+        "W CarMitsu rozumiemy, że Twój samochód Mitsubishi to więcej niż tylko środek transportu – to część Twojego stylu życia. Jako niezależny serwis specjalizujący się w marce Mitsubishi, oferujemy pełen zakres usług, aby Twój pojazd był zawsze w doskonałym stanie i gotowy na każdą przygodę."
+      ]
     },
     "whyUs": {
       "title": "Dlaczego warto wybrać Carmitsu?",
@@ -81,14 +105,35 @@
   "contact": {
     "title": "Kontakt",
     "location": "Kowalska 12, 84-208 Dobrzewino, Polska",
-    "phone": ["Numer:", "+48 692 886 336"],
-    "email": ["E-mail:", "biuro@carmitsu.pl"],
-    "workingHours": ["Godziny pracy:", "8:00-16:00"],
+    "phone": [
+      "Numer:",
+      "+48 692 886 336"
+    ],
+    "email": [
+      "E-mail:",
+      "biuro@carmitsu.pl"
+    ],
+    "workingHours": [
+      "Godziny pracy:",
+      "8:00-16:00"
+    ],
     "form": {
-      "name": ["Imię", "Twoje imię"],
-      "email": ["E-mail", "Twój adres e-mail"],
-      "phone": ["Telefon", "Twój numer telefonu"],
-      "message": ["Wiadomość", "Wpisz tutaj swoją wiadomość..."],
+      "name": [
+        "Imię",
+        "Twoje imię"
+      ],
+      "email": [
+        "E-mail",
+        "Twój adres e-mail"
+      ],
+      "phone": [
+        "Telefon",
+        "Twój numer telefonu"
+      ],
+      "message": [
+        "Wiadomość",
+        "Wpisz tutaj swoją wiadomość..."
+      ],
       "submit": "Wyślij"
     },
     "toast": {

@@ -1,9 +1,15 @@
-'use server';
 import Navigation from "@/components/navbar";
 import Footer from "@/components/footer";
-import {getLanguage} from "@/utils/language";
+import {getLanguage, Lang} from "@/utils/language";
 import {getRealizations} from "@/utils/realizations";
 import AllRealizations from "@/components/realizations/allRealizations";
+import {Metadata} from "next";
+const metaLang: Lang = await getLanguage();
+
+export const metadata: Metadata = {
+  title: metaLang.seo?.realizations.title,
+  description: metaLang.seo?.realizations.description,
+};
 
 export default async function Page() {
   const data = await getLanguage();
