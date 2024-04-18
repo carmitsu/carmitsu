@@ -7,6 +7,7 @@ import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import {getLanguage} from "@/utils/language";
 import {getRealizations} from "@/utils/realizations";
+import Parts from "@/components/parts";
 
 export default async function Home() {
   const data = await getLanguage();
@@ -17,6 +18,7 @@ export default async function Home() {
       <Navigation navbar={data.navbar} language={data.language}/>
       <Hero hero={data.hero}/>
       <About about={data.about}/>
+      <Parts about={data.about}/>
       <Realizations realizations={data.realizations} realizationsData={realizationsData}/>
       <Contact contact={data.contact}/>
       <Footer footer={data.footer}/>

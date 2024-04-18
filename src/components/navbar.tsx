@@ -43,7 +43,7 @@ export default function Navigation({navbar, language}: Lang) {
               <Link color="foreground" className="font-medium" showAnchorIcon={true} anchorIcon={<RiArrowDownSLine/>}>{navbar?.more.title}</Link>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions">
-              <DropdownItem key="parts" target="_blank" href="https://carmitsu.otomoto.pl/">{navbar?.more.parts}</DropdownItem>
+              <DropdownItem key="parts" href="/#Parts">{navbar?.more.parts}</DropdownItem>
               <DropdownItem key="realizations" href="/#Realizations">{navbar?.more.realizations}</DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -94,7 +94,7 @@ export default function Navigation({navbar, language}: Lang) {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" className="text-xl" href="https://carmitsu.otomoto.pl/" target="_blank">
+          <Link color="foreground" className="text-xl" href="/#Parts">
             {navbar?.more.parts}
           </Link>
         </NavbarMenuItem>

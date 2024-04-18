@@ -1,5 +1,4 @@
 'use server';
-import * as process from "node:process";
 
 const lang = require('/public/lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.json');
 // console.log(`Server is starting with language: ${process.env.SITE_LANGUAGE}`);
@@ -111,6 +110,10 @@ interface About {
         description: string;
       }
     }
+  }
+  parts: {
+    title: string;
+    description: string;
   }
 }
 

@@ -5,7 +5,7 @@ import {Lang} from "@/utils/language";
 
 export default function Services({about}: Lang) {
   return (
-    <section className="container space-y-4">
+    <div className="container space-y-4">
       <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">{about?.services.title}</h1>
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-5">
         <Service src="/icons/engine.svg" alt="engine" title={about?.services.servicesList.carOverview.title} description={about?.services.servicesList.carOverview.description}/>
@@ -15,7 +15,7 @@ export default function Services({about}: Lang) {
         <Service src="/icons/bolt.svg" alt="bolt" title={about?.services.servicesList.carElectric.title} description={about?.services.servicesList.carElectric.description}/>
         <Service src="/icons/laptop.svg" alt="laptop" title={about?.services.servicesList.computerDiagnostics.title} description={about?.services.servicesList.computerDiagnostics.description}/>
       </div>
-    </section>
+    </div>
   );
 }
 
