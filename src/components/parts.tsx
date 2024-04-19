@@ -23,7 +23,7 @@ export default function Parts({about}: Lang) {
             <Button size="lg" href="https://carmitsu.otomoto.pl/" target="_blank" as={Link}
                     className="max-md:w-full h-full px-[10%] sm:px-[20%] md:px-3 py-2"><Image
               src={otomotoLogo} alt="About Image"
-              className="object-center object-cover pointer-events-none w-full"
+              className="object-center object-cover pointer-events-none w-full md:min-h-10"
               onLoad={() => setOtomotoImage(true)}/></Button>
           </Skeleton>
         </div>
