@@ -3,9 +3,8 @@ import fs from 'fs';
 import path from 'path';
 
 export async function getRealizations(): Promise<RealizationsData[]> {
-  const realizationsPath = path.join(process.cwd(), 'public/realizations/realizations.json');
-
   try {
+    const realizationsPath = path.join(process.cwd(), 'public/realizations/realizations.json');
     const data = fs.readFileSync(realizationsPath, 'utf-8');
     const realizationsData = JSON.parse(data);
 
