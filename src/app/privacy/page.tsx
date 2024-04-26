@@ -16,7 +16,7 @@ export default async function Page() {
   return (
     <main>
       <Navigation navbar={data.navbar} language={data.language}/>
-      <Privacy navbar={data.navbar} language={data.language}/>
+      <Privacy/>
       <Footer footer={data.footer}/>
     </main>
   );

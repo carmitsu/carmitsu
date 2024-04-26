@@ -1,7 +1,6 @@
 import {Lang} from "@/utils/language";
 
-export default function Privacy({navbar, language}: Lang) {
-  const siteTLD = navbar?.languageList[language || '1'][1];
+export default function Privacy() {
   return (
     <div className="rounded-lg m-4 md:mx-10 lg:mx-20 bg-default-100 border-medium border-default-200 p-2 md:p-4">
       <h1 className="text-center my-6 text-4xl">Polityka Prywatności</h1>

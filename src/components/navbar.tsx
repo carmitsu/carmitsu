@@ -77,7 +77,7 @@ export default function Navigation({navbar, language}: Lang) {
           className="sm:hidden"
         />
       </NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu className="z-[9999]">
         <NavbarMenuItem>
           <Link color="foreground" href="/#" className="text-xl">
             {navbar?.home}
