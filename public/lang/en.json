@@ -96,6 +96,10 @@
           "description": "Regardless of the season, your air conditioning will work flawlessly thanks to our specialized services"
         }
       }
+    },
+    "parts": {
+      "title": "Car Parts",
+      "description": "We offer a wide selection of used car parts for Mitsubishi vehicles, ensuring high quality and reliability at affordable prices. Our inventory includes a variety of components, from powertrain to body parts, to meet all the needs of your vehicle."
     }
   },
   "realizations": {
