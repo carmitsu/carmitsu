@@ -1,27 +1,26 @@
 [
-
    {
-
       "title":"Sukces Naprawy Mitsubishi L200 - Błąd C1430 Rozwiązany w CarMitsu!",
-
       "description":"Ostatnio mieliśmy okazję pracować nad Mitsubishi L200, które zgłosiło błąd C1430 - wyzwanie, które dla wielu warsztatów mogłoby być trudne do pokonania. Nasz zespół mechaników, wyposażony w specjalistyczne narzędzia diagnostyczne, przystąpił do szczegółowej analizy problemu. Po dokładnym zbadaniu systemów pojazdu, udało nam się zidentyfikować i usunąć przyczynę błędu, przywracając pełną funkcjonalność samochodu. Dzięki naszemu zaangażowaniu i doświadczeniu, Mitsubishi L200 szybko powróciło do idealnego stanu, a zadowolenie klienta jest dla nas najlepszym potwierdzeniem skuteczności naszych metod. W CarMitsu stawiamy na profesjonalizm i dokładność, co pozwala nam skutecznie rozwiązywać nawet najbardziej skomplikowane problemy techniczne. Jeżeli Twoje Mitsubishi wymaga ekspertyzy, która przywróci jego sprawność, zapraszamy do kontaktu z naszym serwisem. CarMitsu to gwarancja jakości i zadowolenia z każdej przeprowadzonej naprawy.",
-
       "image":"l200.jpg",
-
       "date":"26-04-2024"
-
    },
-
    {
-
       "title":"Hyundai Galloper - Kompleksowa wymiana i serwis",
-
       "description":"Zapewnij swojemu Hyundai Galloper maksymalną wydajność i niezawodność dzięki naszej kompleksowej usłudze. Wymieniliśmy głowicę, rozrząd, olej oraz wahacze, korzystając z najwyższej jakości części i sprawdzonych technik, aby pojazd służył właścicielowi jak najlepiej.",
-
       "image":"galloper.jpg",
-
       "date":"23-04-2024"
-
+   },
+   {
+      "title":"Mitsubishi Pajero 3 - Wymiana pompy wysokiego ciśnienia",
+      "description":"Twoje Mitsubishi Pajero 3 potrzebuje nowej pompy wysokiego ciśnienia? Zaufaj naszym specjalistom, którzy szybko i skutecznie dokonają wymiany, przywracając optymalną pracę silnika i systemu paliwowego.",
+      "image":"p3.jpg",
+      "date":"22-04-2024"
+   },
+   {
+      "title":"Mitsubishi Outlander - Regulacja zaworów",
+      "description":"Niezależnie od przebiegu, regularna regulacja zaworów jest kluczowa dla zachowania optymalnej wydajności Twojego Mitsubishi Outlander. Nasz zespół dokładnie dostosuje zawory, zapewniając płynną pracę silnika i zwiększając jego efektywność.",
+      "image":"outlander.jpg",
+      "date":"21-04-2024"
    }
-
 ]
