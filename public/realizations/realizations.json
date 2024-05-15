@@ -1,6 +1,6 @@
 [
    {
-      "title":"Mitsubishi L200 - Błąd C1430 Rozwiązany",
+      "title":"Sukces Naprawy Mitsubishi L200 - Błąd C1430 Rozwiązany w CarMitsu!",
       "description":"Ostatnio mieliśmy okazję pracować nad Mitsubishi L200, które zgłosiło błąd C1430 - wyzwanie, które dla wielu warsztatów mogłoby być trudne do pokonania. Nasz zespół mechaników, wyposażony w specjalistyczne narzędzia diagnostyczne, przystąpił do szczegółowej analizy problemu. Po dokładnym zbadaniu systemów pojazdu, udało nam się zidentyfikować i usunąć przyczynę błędu, przywracając pełną funkcjonalność samochodu. Dzięki naszemu zaangażowaniu i doświadczeniu, Mitsubishi L200 szybko powróciło do idealnego stanu, a zadowolenie klienta jest dla nas najlepszym potwierdzeniem skuteczności naszych metod.",
       "image":"l200.jpg",
       "date":"26-04-2024"
@@ -22,5 +22,23 @@
       "description":"Niezależnie od przebiegu, regularna regulacja zaworów jest kluczowa dla zachowania optymalnej wydajności Twojego Mitsubishi Outlander. Nasz zespół dokładnie dostosuje zawory, zapewniając płynną pracę silnika i zwiększając jego efektywność.",
       "image":"outlander.jpg",
       "date":"21-04-2024"
+   },
+   {
+      "title":"Mitsubishi Pajero 4 - Serwis hamulców i serwis olejowy",
+      "description":"W naszym warsztacie przeprowadziliśmy kompleksowy serwis Mitsubishi Pajero 4, rozpoczynając od wymiany oleju oraz wszystkich filtrów, co jest kluczowe dla utrzymania czystości i wydajności silnika. Następnie przystąpiliśmy do regeneracji zacisków hamulcowych, co jest niezbędne dla bezpieczeństwa. Zakończyliśmy pracę, wymieniając klocki oraz tarcze hamulcowe, co zapewnia skuteczne i niezawodne hamowanie.",
+      "image":"p4.jpg",
+      "date":"20-04-2024"
+   },
+   {
+      "title":"Mitsubishi Lancer - Serwis silnika i zawieszenia",
+      "description":"W przypadku Mitsubishi Lancer skoncentrowaliśmy się na wymianie rozrządu, co jest krytyczne dla optymalnego działania silnika i jego długowieczności. Dodatkowo, wymieniliśmy amortyzatory, co znacząco poprawia komfort jazdy oraz stabilność pojazdu na drodze. Każdy etap serwisu został wykonany z dbałością o detale, aby zapewnić najwyższą jakość usług.",
+      "image":"lancer.jpg",
+      "date":"19-04-2024"
+   },
+   {
+      "title":"Mitsubishi Colt - Serwis zawieszenia i silnika",
+      "description":"W Mitsubishi Colt przeprowadziliśmy szeroko zakrojony serwis zawieszenia, zaczynając od wymiany końcówek drążka kierowniczego oraz łączników stabilizatora, co jest istotne dla precyzji kierowania. Kontynuowaliśmy pracę, wymieniając amortyzatory tylne, co zwiększa komfort podróży. Proces serwisowy obejmował także wymianę oleju i wszystkich filtrów, co pomaga w utrzymaniu silnika w doskonałym stanie.",
+      "image":"colt.jpg",
+      "date":"18-04-2024"
    }
 ]
