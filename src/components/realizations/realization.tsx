@@ -33,7 +33,7 @@ export default function Realization({image, title, description}: {
           <p className="text-foreground-500 line-clamp-2">{description}</p>
         </div>
       </div>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size={"5xl"} backdrop={"blur"} placement={"center"}>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size={"5xl"} backdrop={"blur"} placement={"center"} scrollBehavior={"outside"}>
         <ModalContent>
           {(onClose) => (
             <>
