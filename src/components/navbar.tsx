@@ -13,7 +13,7 @@ export default function Navigation({navbar, language}: Lang) {
   const [selectedLanguage] = useState(language);
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
           <a href="/">
@@ -79,27 +79,27 @@ export default function Navigation({navbar, language}: Lang) {
       </NavbarContent>
       <NavbarMenu className="z-[9999]">
         <NavbarMenuItem>
-          <Link color="foreground" href="/#" className="text-xl">
+          <Link color="foreground" href="/#" className="text-xl" onClick={() => setIsMenuOpen(false)}>
             {navbar?.home}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="/#About" className="text-xl">
+          <Link color="foreground" href="/#About" className="text-xl" onClick={() => setIsMenuOpen(false)}>
             {navbar?.about}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="/#Contact" className="text-xl">
+          <Link color="foreground" href="/#Contact" className="text-xl" onClick={() => setIsMenuOpen(false)}>
             {navbar?.contact}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" className="text-xl" href="/#Parts">
+          <Link color="foreground" className="text-xl" href="/#Parts" onClick={() => setIsMenuOpen(false)}>
             {navbar?.more.parts}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" className="text-xl" href="/#Realizations">
+          <Link color="foreground" className="text-xl" href="/#Realizations" onClick={() => setIsMenuOpen(false)}>
             {navbar?.more.realizations}
           </Link>
         </NavbarMenuItem>
