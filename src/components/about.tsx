@@ -21,6 +21,7 @@ export default function About({about}: Lang) {
           <div className="space-y-2">
             <p className="lg:max-w-[40rem]">{about?.about.description[0]}</p>
             <p className="lg:max-w-[40rem]">{about?.about.description[1]}</p>
+            <p className="lg:max-w-[40rem]">{about?.about.description[2]}</p>
           </div>
         </div>
         <Skeleton className="rounded-xl relative" isLoaded={isAboutImage}>

@@ -1,7 +1,7 @@
 {
   "language": "pl",
   "seo": {
-    "description": "W CarMitsu, nasza specjalność to nie tylko samochody – to pasja i zaangażowanie, które wkładamy w każdy serwisowany przez nas pojazd Mitsubishi. Jesteśmy niezależnym serwisem, który z dumą oferuje kompleksową opiekę nad Twoim autem, łącząc długie doświadczenie z nowoczesną technologią.",
+    "description": "W CarMitsu nasza specjalność to nie tylko samochody – to pasja i zaangażowanie, które wkładamy w każdy serwisowany przez nas pojazd Mitsubishi, Hyundai i Toyota. Jesteśmy niezależnym serwisem, który z dumą oferuje kompleksową opiekę nad Twoim autem, łącząc wieloletnie doświadczenie z nowoczesną technologią.",
     "privacy": {
       "title": "Polityka Prywatności",
       "description": "Zapoznaj się z naszą polityką prywatności, aby dowiedzieć się, jakie dane zbieramy i w jaki sposób je przetwarzamy."
@@ -41,15 +41,16 @@
   },
   "hero": {
     "title": "CarMitsu",
-    "subtitle": "Twoje Mitsubishi, Nasza pasja!",
+    "subtitle": "Twoje Auto, Nasza pasją!",
     "button": "Zobacz więcej"
   },
   "about": {
     "about": {
-      "title": "Specjalistyczny Serwis Samochodów Mitsubishi",
+      "title": "Specjalistyczny Serwis Samochodów Mitsubishi, Hyundai i Toyota",
       "description": [
-        "CarMitsu to firma motoryzacyjna z wieloletnim doświadczeniem , która specjalizuje się w naprawie i serwisowaniu samochodów marki Mitsubishi . Nasza historia zaczęła się od pasji do legendarnych samochodów terenowych: Mitsubishi Pajero, L200 oraz Hyundai Galloper. Ta pasja przekształciła się w profesjonalny serwis, który dziś oferuje najwyższej jakości usługi dla szerokiej gamy pojazdów Mitsubishi.",
-        "W CarMitsu rozumiemy, że Twój samochód Mitsubishi to więcej niż tylko środek transportu – to część Twojego stylu życia. Jako niezależny serwis specjalizujący się w marce Mitsubishi, oferujemy pełen zakres usług, aby Twój pojazd był zawsze w doskonałym stanie i gotowy na każdą przygodę."
+        "CarMitsu to firma motoryzacyjna z wieloletnim doświadczeniem, specjalizująca się w naprawie i serwisowaniu samochodów marek Mitsubishi, Hyundai oraz Toyota.",
+        "Nasza historia zaczęła się od pasji do legendarnych samochodów terenowych – Mitsubishi Pajero, L200 oraz Hyundai Galloper. Z czasem ta pasja przerodziła się w profesjonalny serwis, który dziś oferuje najwyższej jakości usługi dla szerokiej gamy pojazdów Mitsubishi, Hyundai i Toyota.",
+        "W CarMitsu rozumiemy, że Twój samochód – niezależnie od tego, czy jest to Mitsubishi, Hyundai czy Toyota – to coś więcej niż tylko środek transportu. To część Twojego stylu życia. Jako niezależny, wyspecjalizowany serwis oferujemy pełen zakres usług mechanicznych, diagnostycznych i serwisowych, aby Twój pojazd był zawsze w doskonałym stanie i gotowy na każdą przygodę."
       ]
     },
     "whyUs": {
@@ -63,7 +64,7 @@
         "description": "Zadowoleni klienci: Dołącz do naszego licznie rosnącego grona zadowolonych klientów, którzy zaufali naszym usługom i doświadczeniu."
       },
       "passion": {
-        "title": "Pasja do Mitsubishi:",
+        "title": "Pasja do Samochdów:",
         "description": "Nasza praca to nasza pasja, co widać w każdym szczególe naszej pracy i w każdym uśmiechu naszych klientów."
       },
       "footer": "Zapraszamy do kontaktu i umówienia się na wizytę. Doświadcz serwisu, który łączy pasję z profesjonalizmem, i dołącz do grona naszych zadowolonych klientów."

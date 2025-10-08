@@ -1,7 +1,7 @@
 {
   "language": "en",
   "seo": {
-    "description": "At CarMitsu, our specialty isn't just cars – it's the passion and dedication we put into every Mitsubishi vehicle we service. We are an independent service center that proudly offers comprehensive care for your car, combining extensive experience with modern technology.",
+    "description": "At CarMitsu, our specialty is not just cars – it’s the passion and dedication we put into every Mitsubishi, Hyundai, and Toyota we service. We are an independent workshop proud to provide comprehensive care for your vehicle, combining years of experience with modern technology.",
     "privacy": {
       "title": "Privacy Policy",
       "description": "Read our privacy policy to learn what data we collect and how we process it."
@@ -41,15 +41,16 @@
   },
   "hero": {
     "title": "CarMitsu",
-    "subtitle": "Your Mitsubishi, Our Passion!",
+    "subtitle": "Your Car, Our Passion!",
     "button": "Check more"
   },
   "about": {
     "about": {
-      "title": "Specialized Mitsubishi Car Service",
+      "title": "Specialized Service for Mitsubishi, Hyundai and Toyota Vehicles",
       "description": [
-        "CarMitsu is an automotive company with years of experience specializing in the repair and servicing of Mitsubishi vehicles. Our history began with a passion for legendary off-road vehicles: the Mitsubishi Pajero, L200, and Hyundai Galloper. This passion has evolved into a professional service that today offers high-quality services for a wide range of Mitsubishi vehicles.",
-        "At CarMitsu, we understand that your Mitsubishi car is more than just a means of transportation – it's a part of your lifestyle. As an independent service specializing in the Mitsubishi brand, we offer a full range of services to ensure that your vehicle is always in excellent condition and ready for any adventure."
+        "CarMitsu is an automotive company with many years of experience, specializing in the repair and maintenance of Mitsubishi, Hyundai, and Toyota vehicles.",
+        "Our story began with a passion for legendary off-road cars – the Mitsubishi Pajero, L200, and Hyundai Galloper. Over time, that passion evolved into a professional service center that now provides top-quality maintenance and repair services for a wide range of Mitsubishi, Hyundai, and Toyota models.",
+        "At CarMitsu, we understand that your car – whether it’s a Mitsubishi, Hyundai, or Toyota – is more than just a means of transport. It’s a part of your lifestyle. As an independent specialist workshop, we offer a full range of mechanical, diagnostic, and maintenance services to ensure your vehicle is always in perfect condition and ready for any adventure."
       ]
     },
     "whyUs": {
@@ -63,7 +64,7 @@
         "description": "Join our growing community of satisfied customers who have trusted our services and expertise."
       },
       "passion": {
-        "title": "Passion for Mitsubishi:",
+        "title": "Passion for Cars:",
         "description": "Our work is our passion, which is evident in every detail of our work and in every smile of our customers."
       },
       "footer": "Contact us today to schedule an appointment. Experience service that combines passion with professionalism and join our community of satisfied customers."
