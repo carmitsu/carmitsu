@@ -1,9 +1,13 @@
+'use client';
 import Image from "next/image";
 import {Skeleton} from "@nextui-org/react";
 import React from "react";
-import {Lang} from "@/utils/language";
+import {useLanguage} from "@/contexts/LanguageContext";
 
-export default function Services({about}: Lang) {
+export default function Services() {
+  const { data } = useLanguage();
+  const about = data.about;
+  
   return (
     <div className="container space-y-4">
       <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">{about?.services.title}</h1>

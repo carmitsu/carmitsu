@@ -1,14 +1,15 @@
 'use client';
 import Services from "@/components/services";
-import Parts from "@/components/parts";
 import Image from "next/image";
 import aboutImage from "/public/images/about.jpg";
 import whyUsImage from "/public/images/whyUs.jpg";
 import {Skeleton} from "@nextui-org/react";
 import {useState} from "react";
-import {Lang} from "@/utils/language";
+import {useLanguage} from "@/contexts/LanguageContext";
 
-export default function About({about}: Lang) {
+export default function About() {
+  const { data } = useLanguage();
+  const about = data.about;
   const [isAboutImage, setAboutImage] = useState(false);
   const [isWhyUsImage, setWhyUsImage] = useState(false);
 
@@ -29,7 +30,7 @@ export default function About({about}: Lang) {
                  onLoad={() => setAboutImage(true)}/>
         </Skeleton>
       </div>
-      <Services about={about}/>
+      <Services />
       <div className="grid md:grid-cols-2 gap-4 max-md:grid-rows-2 container">
         <div className="space-y-6 md:my-8 lg:my-14 max-md:mb-3">
           <h1

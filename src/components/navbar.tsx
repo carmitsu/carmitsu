@@ -1,16 +1,18 @@
 'use client'
-import {Lang} from "@/utils/language";
-import React, {useState} from "react";
+import React from "react";
 import {RiArrowDownSLine} from "@remixicon/react";
+import {useLanguage} from "@/contexts/LanguageContext";
 
 import {
   Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button, Dropdown,
   DropdownTrigger, DropdownMenu, DropdownItem,
 } from "@nextui-org/react";
 
-export default function Navigation({navbar, language}: Lang) {
+export default function Navigation() {
+  const { language, data } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [selectedLanguage] = useState(language);
+
+  const navbar = data.navbar;
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen}>
@@ -54,15 +56,15 @@ export default function Navigation({navbar, language}: Lang) {
           <DropdownTrigger>
             <Button className="flex items-center" variant="flat" color="primary">
               <span className="sr-only">Change language</span>
-              {selectedLanguage &&
-                  <img src={`/flags/${selectedLanguage}.svg`} alt={`${selectedLanguage} Flag`} className="h-4 mr-1"/>}
-              {selectedLanguage && navbar?.languageList[selectedLanguage] &&
-                  <span className="font-medium">{navbar?.languageList[selectedLanguage][0]}</span>}
+              {language &&
+                  <img src={`/flags/${language}.svg`} alt={`${language} Flag`} className="h-4 mr-1"/>}
+              {language && navbar?.languageList[language] &&
+                  <span className="font-medium">{navbar?.languageList[language][0]}</span>}
             </Button>
           </DropdownTrigger>
           <DropdownMenu>
             {Object.keys(navbar?.languageList || {})
-              .sort((a, b) => (a === selectedLanguage ? -1 : 0))
+              .sort((a, b) => (a === language ? -1 : 0))
               .map(lang => (
                 <DropdownItem key={lang} startContent={<img src={`/flags/${lang}.svg`} alt={`${lang} Flag`} className="h-4 mr-1"/>}>
                   <a href={navbar?.languageList[lang][1]} className="flex items-center">
@@ -79,27 +81,27 @@ export default function Navigation({navbar, language}: Lang) {
       </NavbarContent>
       <NavbarMenu className="z-[9999]">
         <NavbarMenuItem>
-          <Link color="foreground" href="/#" className="text-xl" onClick={() => setIsMenuOpen(false)}>
+          <Link color="foreground" href="/#" className="text-xl" onPress={() => setIsMenuOpen(false)}>
             {navbar?.home}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="/#About" className="text-xl" onClick={() => setIsMenuOpen(false)}>
+          <Link color="foreground" href="/#About" className="text-xl" onPress={() => setIsMenuOpen(false)}>
             {navbar?.about}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" href="/#Contact" className="text-xl" onClick={() => setIsMenuOpen(false)}>
+          <Link color="foreground" href="/#Contact" className="text-xl" onPress={() => setIsMenuOpen(false)}>
             {navbar?.contact}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" className="text-xl" href="/#Parts" onClick={() => setIsMenuOpen(false)}>
+          <Link color="foreground" className="text-xl" href="/#Parts" onPress={() => setIsMenuOpen(false)}>
             {navbar?.more.parts}
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link color="foreground" className="text-xl" href="/#Realizations" onClick={() => setIsMenuOpen(false)}>
+          <Link color="foreground" className="text-xl" href="/#Realizations" onPress={() => setIsMenuOpen(false)}>
             {navbar?.more.realizations}
           </Link>
         </NavbarMenuItem>

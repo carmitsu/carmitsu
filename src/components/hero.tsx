@@ -1,10 +1,14 @@
+'use client';
 import Image from "next/image";
 import {Button} from "@nextui-org/button";
 import {Link} from "@nextui-org/link";
-import {Lang} from "@/utils/language";
+import {useLanguage} from "@/contexts/LanguageContext";
 import HeroBackground from "/public/images/hero.jpg";
 
-export default function Hero({hero}: Lang) {
+export default function Hero() {
+  const { data } = useLanguage();
+  const hero = data.hero;
+  
   return (
     <section className="h-dvh relative grid items-center">
       <Image src={HeroBackground} alt="Hero background" fill={true} placeholder={"blur"}

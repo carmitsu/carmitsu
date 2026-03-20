@@ -1,12 +1,14 @@
 'use client';
-import {Lang} from "@/utils/language";
 import React from "react";
 import Image from "next/image";
 import otomotoLogo from "/public/images/otomoto.svg";
 import parts from "/public/images/parts.jpg";
 import {Skeleton, Button, Link} from "@nextui-org/react";
+import {useLanguage} from "@/contexts/LanguageContext";
 
-export default function Parts({about}: Lang) {
+export default function Parts() {
+  const { data } = useLanguage();
+  const about = data.about;
   const [isOtomotoImage, setOtomotoImage] = React.useState(false);
   const [isPartsImage, setPartsImage] = React.useState(false);
 

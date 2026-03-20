@@ -1,13 +1,16 @@
 'use client';
-import {Lang} from "@/utils/language";
 import "leaflet/dist/leaflet.css";
 import {Input, Textarea, Button} from "@nextui-org/react";
 import axios from "axios";
 import {toast as toaster} from "sonner";
 import dynamic from 'next/dynamic';
+import {useLanguage} from "@/contexts/LanguageContext";
 const Map = dynamic(() => import('@/components/map'), {ssr: false});
 
-export default function Contact({contact}: Lang) {
+export default function Contact() {
+  const { data } = useLanguage();
+  const contact = data.contact;
+  
   return (
     <section id="Contact" className="grid grid-cols-1 md:grid-cols-2 pt-20">
       <div className="grid items-center justify-center p-2 max-md:py-3 max-md:max-h-[600px]">
