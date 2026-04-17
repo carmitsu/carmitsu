@@ -145,7 +145,7 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
           )}
         </div>
         <div className="space-y-1">
-          <h1 className="max-md:text-lg md:text-xl lg:text-2xl truncate">{title}</h1>
+          <h3 className="max-md:text-lg md:text-xl lg:text-2xl truncate">{title}</h3>
           <p className="text-foreground-500 line-clamp-2">{description}</p>
         </div>
       </div>

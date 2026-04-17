@@ -32,7 +32,7 @@ export default function Realizations() {
   return (
     <section id="Realizations" className="px-6 md:px-14 pt-24 flex flex-col items-center space-y-5">
       <div className="container space-y-4">
-        <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">{realizations?.title}</h1>
+        <h2 className="max-md:text-2xl md:text-3xl lg:text-4xl">{realizations?.title}</h2>
         {loading ? (
           <div className="flex justify-center py-8">
             <Spinner />

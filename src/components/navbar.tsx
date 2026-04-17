@@ -19,7 +19,7 @@ export default function Navigation() {
       <NavbarContent>
         <NavbarBrand>
           <a href="/">
-            <h1 className="text-3xl">CarMitsu</h1>
+            <span className="text-3xl">CarMitsu</span>
           </a>
         </NavbarBrand>
       </NavbarContent>

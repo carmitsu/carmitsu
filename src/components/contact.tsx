@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="grid items-center justify-center p-2 max-md:py-3 max-md:max-h-[600px]">
         <div className="text-center space-y-6">
           <div className="space-y-2">
-            <h1 className="text-4xl">{contact?.title}</h1>
+            <h2 className="text-4xl">{contact?.title}</h2>
             <div className="space-y-1 flex flex-col items-center">
               <p>{contact?.location}</p>
               <div className="flex max-lg:flex-col lg:space-x-3">
