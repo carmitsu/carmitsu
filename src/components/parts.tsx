@@ -21,13 +21,13 @@ export default function Parts() {
           <div className="space-y-3">
             <p className="lg:max-w-[40rem]">{about?.parts.description}</p>
           </div>
-          <Skeleton className="rounded-xl md:w-fit" isLoaded={isOtomotoImage}>
-            <Button size="lg" href="https://carmitsu.otomoto.pl/" target="_blank" as={Link}
-                    className="max-md:w-full h-full px-[10%] sm:px-[20%] md:px-3 py-2"><Image
-              src={otomotoLogo} alt="About Image"
-              className="object-center object-cover pointer-events-none w-full md:min-h-10"
-              onLoad={() => setOtomotoImage(true)}/></Button>
-          </Skeleton>
+          {/*<Skeleton className="rounded-xl md:w-fit" isLoaded={isOtomotoImage}>*/}
+          {/*  <Button size="lg" href="https://carmitsu.otomoto.pl/" target="_blank" as={Link}*/}
+          {/*          className="max-md:w-full h-full px-[10%] sm:px-[20%] md:px-3 py-2"><Image*/}
+          {/*    src={otomotoLogo} alt="About Image"*/}
+          {/*    className="object-center object-cover pointer-events-none w-full md:min-h-10"*/}
+          {/*    onLoad={() => setOtomotoImage(true)}/></Button>*/}
+          {/*</Skeleton>*/}
         </div>
         <Skeleton className="rounded-xl relative" isLoaded={isPartsImage}>
           <Image src={parts} alt="About Image" fill={true}

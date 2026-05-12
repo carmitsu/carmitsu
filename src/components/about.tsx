@@ -3,7 +3,7 @@ import Services from "@/components/services";
 import Image from "next/image";
 import aboutImage from "/public/images/about.jpg";
 import whyUsImage from "/public/images/whyUs.jpg";
-import {Skeleton} from "@nextui-org/react";
+import {Link, Skeleton} from "@nextui-org/react";
 import {useState} from "react";
 import {useLanguage} from "@/contexts/LanguageContext";
 import {Button} from "@nextui-org/button";
@@ -49,7 +49,7 @@ export default function About() {
               <h3 className="text-xl md:text-2xl ml-1">{about?.whyUs.passion.title}</h3>
               <p>{about?.whyUs.passion.description}</p>
             </div>
-            <Button size="lg" color="primary" variant="flat" className="w-full">{about?.whyUs.button}</Button>
+            <Button size="lg" color="primary" variant="flat" className="w-full" href="https://www.google.com/maps/place/CarMitsu+warsztat+samochodowy/@54.4522303,18.4037406,527m/data=!3m1!1e3!4m17!1m8!3m7!1s0x46fda3260f34267d:0x6fbda2c4a6fc105!2sCarMitsu+warsztat+samochodowy!8m2!3d54.4526712!4d18.4016195!10e2!16s%2Fg%2F11tmn249f1!3m7!1s0x46fda3260f34267d:0x6fbda2c4a6fc105!8m2!3d54.4526712!4d18.4016195!9m1!1b1!16s%2Fg%2F11tmn249f1?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" as={Link} target="_blank">{about?.whyUs.button}</Button>
           </div>
           <p className="text-foreground-500 px-1 leading-5">{about?.whyUs.footer}</p>
         </div>
