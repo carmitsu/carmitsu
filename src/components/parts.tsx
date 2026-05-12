@@ -17,7 +17,7 @@ export default function Parts() {
       <div className="grid md:grid-cols-2 gap-4 max-md:grid-rows-2 container">
         <div className="space-y-6 md:my-8 lg:my-14">
           <h1
-            className="max-md:text-2xl md:text-3xl lg:text-4xl max-w-[34rem] leading-[3.5rem]">{about?.parts.title}</h1>
+            className="max-md:text-2xl md:text-3xl lg:text-4xl max-w-[34rem] leading-[3.5rem] text-primary/85">{about?.parts.title}</h1>
           <div className="space-y-3">
             <p className="lg:max-w-[40rem]">{about?.parts.description}</p>
           </div>
@@ -31,7 +31,7 @@ export default function Parts() {
         </div>
         <Skeleton className="rounded-xl relative" isLoaded={isPartsImage}>
           <Image src={parts} alt="About Image" fill={true}
-                 className="object-center object-cover pointer-events-none"
+                 className="object-center object-cover pointer-events-none rounded-xl"
                  onLoad={() => setPartsImage(true)}/>
         </Skeleton>
       </div>

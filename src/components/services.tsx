@@ -10,7 +10,7 @@ export default function Services() {
   
   return (
     <div className="container space-y-4">
-      <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">{about?.services.title}</h1>
+      <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl text-primary/85">{about?.services.title}</h1>
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-5">
         <Service src="/icons/engine.svg" alt="engine" title={about?.services.servicesList.carOverview.title} description={about?.services.servicesList.carOverview.description}/>
         <Service src="/icons/snow.svg" alt="snow" title={about?.services.servicesList.airConditioning.title} description={about?.services.servicesList.airConditioning.description}/>

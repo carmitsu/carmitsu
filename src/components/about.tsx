@@ -6,6 +6,7 @@ import whyUsImage from "/public/images/whyUs.jpg";
 import {Skeleton} from "@nextui-org/react";
 import {useState} from "react";
 import {useLanguage} from "@/contexts/LanguageContext";
+import {Button} from "@nextui-org/button";
 
 export default function About() {
   const { data } = useLanguage();
@@ -18,7 +19,7 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-4 max-md:grid-rows-2 container">
         <div className="space-y-6 md:my-8 lg:my-14">
           <h2
-            className="max-md:text-2xl md:text-3xl lg:text-4xl max-w-[34rem] leading-[3.5rem]">{about?.about.title}</h2>
+            className="max-md:text-2xl md:text-3xl lg:text-4xl max-w-[34rem] leading-[3.5rem] text-primary/85">{about?.about.title}</h2>
           <div className="space-y-2">
             <p className="lg:max-w-[40rem]">{about?.about.description[0]}</p>
             <p className="lg:max-w-[40rem]">{about?.about.description[1]}</p>
@@ -26,7 +27,7 @@ export default function About() {
           </div>
         </div>
         <Skeleton className="rounded-xl relative" isLoaded={isAboutImage}>
-          <Image src={aboutImage} alt="About Image" fill={true} className="object-center object-cover pointer-events-none"
+          <Image src={aboutImage} alt="About Image" fill={true} className="object-center object-cover pointer-events-none rounded-xl"
                  onLoad={() => setAboutImage(true)}/>
         </Skeleton>
       </div>
@@ -34,7 +35,7 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-4 max-md:grid-rows-2 container">
         <div className="space-y-6 md:my-8 lg:my-14 max-md:mb-3">
           <h2
-            className="max-md:text-2xl md:text-3xl lg:text-4xl max-w-[34rem] leading-[3.5rem]">{about?.whyUs.title}</h2>
+            className="max-md:text-2xl md:text-3xl lg:text-4xl max-w-[34rem] leading-[3.5rem] text-primary/85">{about?.whyUs.title}</h2>
           <div className="space-y-2 grid lg:max-w-[40rem]">
             <div className="bg-default-100 p-3 py-2 rounded-lg space-y-1">
               <h3 className="text-xl md:text-2xl ml-1">{about?.whyUs.experience.title}</h3>
@@ -48,11 +49,12 @@ export default function About() {
               <h3 className="text-xl md:text-2xl ml-1">{about?.whyUs.passion.title}</h3>
               <p>{about?.whyUs.passion.description}</p>
             </div>
+            <Button size="lg" color="primary" variant="flat" className="w-full">{about?.whyUs.button}</Button>
           </div>
           <p className="text-foreground-500 px-1 leading-5">{about?.whyUs.footer}</p>
         </div>
         <Skeleton className="rounded-xl relative" isLoaded={isWhyUsImage}>
-          <Image src={whyUsImage} alt="ChooseUs Image" fill={true} className="object-center object-cover pointer-events-none"
+          <Image src={whyUsImage} alt="ChooseUs Image" fill={true} className="object-center object-cover pointer-events-none rounded-xl"
                  onLoad={() => setWhyUsImage(true)}/>
         </Skeleton>
       </div>

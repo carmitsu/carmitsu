@@ -80,7 +80,8 @@ interface About {
     "passion": {
       "title": string;
       "description": string;
-    }
+    },
+    "button": string,
     "footer": string;
   }
   services: {
