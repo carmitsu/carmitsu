@@ -41,8 +41,17 @@
   },
   "hero": {
     "title": "CarMitsu",
-    "subtitle": "Twoje Auto, Nasza pasją!",
-    "button": "Zobacz więcej"
+    "subtitle": "Twój samochód, nasza pasja!",
+    "description": [
+      "Naprawa wszystkich marek ze specjalizacją w Mitsubishi oraz samochodach japońskich i koreańskich.",
+      [
+        "Szybka diagnostyka",
+        "Uczciwe ceny",
+        "Doświadczenie"
+      ]
+    ],
+    "phone": "+48 692 886 336",
+    "button": "Dowiedz się więcej"
   },
   "about": {
     "about": {
@@ -55,20 +64,38 @@
     },
     "whyUs": {
       "title": "Dlaczego warto wybrać Carmitsu?",
-      "experience": {
-        "title": "Doświadczenie:",
-        "description": "Nasz zespół to specjaliści z wieloletnim doświadczeniem w branży, którzy nieustannie podnoszą swoje kwalifikacje."
-      },
-      "clients": {
-        "title": "Zadowoleni klienci:",
-        "description": "Zadowoleni klienci: Dołącz do naszego licznie rosnącego grona zadowolonych klientów, którzy zaufali naszym usługom i doświadczeniu."
-      },
-      "passion": {
-        "title": "Pasja do Samochdów:",
-        "description": "Nasza praca to nasza pasja, co widać w każdym szczególe naszej pracy i w każdym uśmiechu naszych klientów."
-      },
+      "description": [
+        [
+          "Zadowoleni klienci:",
+          "Dołącz do naszego stale rosnącego grona zadowolonych klientów, którzy zaufali naszym usługom i doświadczeniu."
+        ],
+        [
+          "Doświadczenie:",
+          "Nasz zespół to specjaliści z wieloletnim doświadczeniem w branży, którzy nieustannie podnoszą swoje kwalifikacje."
+        ],
+        [
+          "Pasja do samochodów:",
+          "Nasza praca to nasza pasja, co widać w każdym detalu naszej pracy i w każdym uśmiechu naszych klientów."
+        ],
+        [
+          "Naprawiamy wszystkie marki:",
+          "Obsługujemy również inne samochody, zarówno osobowe, jak i dostawcze."
+        ],
+        [
+          "Dokładna diagnostyka:",
+          "Nie zgadujemy – najpierw dokładnie sprawdzamy, a dopiero potem naprawiamy."
+        ],
+        [
+          "Uczciwe podejście:",
+          "Jasno mówimy, co wymaga naprawy i ile będzie Cię to kosztować, bez ukrytych opłat."
+        ],
+        [
+          "Szybkie terminy:",
+          "Wiemy, że auto jest potrzebne na co dzień, dlatego działamy sprawnie, abyś mógł szybko wrócić na drogę."
+        ]
+      ],
       "button": "Sprawdź nasze opinie",
-      "footer": "Zapraszamy do kontaktu i umówienia się na wizytę. Doświadcz serwisu, który łączy pasję z profesjonalizmem, i dołącz do grona naszych zadowolonych klientów."
+      "footer": "Zapraszamy do kontaktu i umówienia się na wizytę. Doświadcz serwisu, który łączy pasję z profesjonalizmem i dołącz do grona zadowolonych klientów."
     },
     "services": {
       "title": "Co możemy dla ciebie zrobić?",
@@ -101,7 +128,11 @@
     },
     "parts": {
       "title": "Części samochodowe",
-      "description": "Oferujemy szeroki wybór używanych części do samochodów marki Mitsubishi, zapewniając wysoką jakość i niezawodność w atrakcyjnych cenach. Nasz asortyment obejmuje różnorodne komponenty, od układu napędowego po elementy karoserii, aby sprostać wszelkim potrzebom Twojego pojazdu."
+      "description": "Oferujemy szeroki wybór używanych części do samochodów marki Mitsubishi, zapewniając wysoką jakość i niezawodność w atrakcyjnych cenach. Nasz asortyment obejmuje różnorodne komponenty, od układu napędowego po elementy karoserii, aby sprostać wszelkim potrzebom Twojego pojazdu.",
+      "button": [
+        "Sprawdzić dostępność:",
+        "+48 692 886 336"
+      ]
     }
   },
   "realizations": {

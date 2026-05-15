@@ -59,6 +59,8 @@ interface Navbar {
 interface Hero {
   title: string;
   subtitle: string;
+  description: string[];
+  phone: string;
   button: string;
 }
 
@@ -68,21 +70,10 @@ interface About {
     description: string[];
   }
   whyUs: {
-    "title": string;
-    "experience": {
-      "title": string;
-      "description": string;
-    },
-    "clients": {
-      "title": string;
-      "description": string;
-    },
-    "passion": {
-      "title": string;
-      "description": string;
-    },
-    "button": string,
-    "footer": string;
+    title: string;
+    description: string[]
+    button: string,
+    footer: string;
   }
   services: {
     title: string;
@@ -116,6 +107,7 @@ interface About {
   parts: {
     title: string;
     description: string;
+    button: string[];
   }
 }
 
