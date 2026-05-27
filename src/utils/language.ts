@@ -28,6 +28,7 @@ export interface Lang{
   contact?: Contact;
   footer?: Footer;
   404?: string;
+  baner?: Baner;
 }
 
 interface Seo {
@@ -140,4 +141,11 @@ interface Footer {
   about: string;
   contact: string;
   privacy: string;
+}
+
+interface Baner {
+  title: string;
+  body: string;
+  yes: string;
+  no: string;
 }

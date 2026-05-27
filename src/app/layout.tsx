@@ -6,6 +6,8 @@ import React from "react";
 import {getLanguage} from "@/utils/language";
 import {LanguageProvider} from "@/contexts/LanguageContext";
 import Script from "next/script";
+import {GoogleTagManager} from "@next/third-parties/google";
+import Baner from "@/components/baner";
 
 const SITE_ALTERNATES: Record<string, string> = {
   en: "https://carmitsu.com",
@@ -111,38 +113,56 @@ export default async function RootLayout({children,}: Readonly<{
 
   return (
     <html lang={data.language || "en"} className='dark scroll-smooth'>
-      <head>
-        <Script
-          id="cloudflare-analytics"
-          strategy="afterInteractive"
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon={JSON.stringify({token: process.env.ANALYTICS || ""})}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessJsonLd),
-          }}
-        />
-      </head>
-      <body>
-        <Providers>
-          <LanguageProvider language={data.language as 'pl' | 'en'} data={data}>
-            {children}
-          </LanguageProvider>
-        </Providers>
-        <Toaster
-          expand={false}
-          position="top-center"
-          toastOptions={{
-            classNames: {
-              success: 'bg-success-400 text-gray-900 border border-0',
-              error: 'bg-danger-400 text-gray-900 border border-0',
-              warning: 'bg-warning-400 text-gray-900 border border-0',
-            },
-          }}
-        />
-      </body>
+    <head>
+      <Script
+        id="cloudflare-analytics"
+        strategy="afterInteractive"
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({token: process.env.ANALYTICS || ""})}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessJsonLd),
+        }}
+      />
+      <script
+        id="gtag-consent"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'analytics_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'wait_for_update': 500
+            });
+          `,
+        }}
+      />
+      <GoogleTagManager gtmId="GTM-M2LLQ24B"/>
+    </head>
+    <body>
+    <Providers>
+      <LanguageProvider language={data.language as 'pl' | 'en'} data={data}>
+        {children}
+        <Baner/>
+      </LanguageProvider>
+    </Providers>
+    <Toaster
+      expand={false}
+      position="top-center"
+      toastOptions={{
+        classNames: {
+          success: 'bg-success-400 text-gray-900 border border-0',
+          error: 'bg-danger-400 text-gray-900 border border-0',
+          warning: 'bg-warning-400 text-gray-900 border border-0',
+        },
+      }}
+    />
+    </body>
     </html>
   );
 }

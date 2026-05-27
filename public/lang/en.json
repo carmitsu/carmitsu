@@ -184,5 +184,11 @@
     "contact": "Contact",
     "privacy": "Privacy Policy"
   },
-  "404": "Page not found"
+  "404": "Page not found",
+  "baner": {
+    "title": "We respect your privacy",
+    "body": "We use cookies to ensure the website functions properly, to analyze traffic, and to provide personalized advertising. You can accept all cookies or customize your preferences in the settings.",
+    "yes": "Accept",
+    "no": "Reject"
+  }
 }

@@ -184,5 +184,11 @@
     "contact": "Kontakt",
     "privacy": "Polityka prywatności"
   },
-  "404": "Nie znaleziono strony"
+  "404": "Nie znaleziono strony",
+  "baner": {
+    "title": "Szanujemy Twoją prywatność",
+    "body": "Korzystamy z plików cookies, aby zapewnić poprawne działanie strony, analizować ruch oraz wyświetlać personalizowane reklamy.",
+    "yes": "Akceptuje",
+    "no": "Odrzuć"
+  }
 }
