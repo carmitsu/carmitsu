@@ -176,7 +176,8 @@
     "toast": {
       "success": "Message sent successfully",
       "error": "An error occurred while sending the message"
-    }
+    },
+    "howGet": "Directions"
   },
   "footer": {
     "rights": "All rights reserved",

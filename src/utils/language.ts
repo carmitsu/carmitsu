@@ -134,6 +134,7 @@ interface Contact {
     success: string;
     error: string;
   }
+  howGet: string;
 }
 
 interface Footer {

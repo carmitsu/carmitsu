@@ -176,7 +176,8 @@
     "toast": {
       "success": "Wiadomość została pomyślnie wysłana",
       "error": "Wystąpił błąd podczas wysyłania wiadomości"
-    }
+    },
+    "howGet": "Wskazówki dojazdu"
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone",
