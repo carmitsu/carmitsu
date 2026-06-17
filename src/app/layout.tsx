@@ -6,7 +6,7 @@ import React from "react";
 import {getLanguage} from "@/utils/language";
 import {LanguageProvider} from "@/contexts/LanguageContext";
 import Script from "next/script";
-import {GoogleTagManager} from "@next/third-parties/google";
+import {GoogleTagManager, GoogleAnalytics} from "@next/third-parties/google";
 import Baner from "@/components/baner";
 
 const SITE_ALTERNATES: Record<string, string> = {
@@ -118,7 +118,7 @@ export default async function RootLayout({children,}: Readonly<{
         id="cloudflare-analytics"
         strategy="afterInteractive"
         src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon={JSON.stringify({token: process.env.ANALYTICS || ""})}
+        data-cf-beacon={JSON.stringify({token: process.env.C_ANALYTICS || ""})}
       />
       <script
         type="application/ld+json"
@@ -132,17 +132,29 @@ export default async function RootLayout({children,}: Readonly<{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            
+            let consentFromStorage = 'denied';
+            try {
+              const storedConsent = localStorage.getItem('user-consent');
+              if (storedConsent === 'granted' || storedConsent === 'denied') {
+                consentFromStorage = storedConsent;
+              }
+            } catch (e) {
+              console.warn('Could not read consent from localStorage');
+            }
+            
             gtag('consent', 'default', {
-              'ad_storage': 'denied',
-              'analytics_storage': 'denied',
-              'ad_user_data': 'denied',
-              'ad_personalization': 'denied',
+              'ad_storage': consentFromStorage,
+              'analytics_storage': consentFromStorage,
+              'ad_user_data': consentFromStorage,
+              'ad_personalization': consentFromStorage,
               'wait_for_update': 500
             });
           `,
         }}
-      />
-      <GoogleTagManager gtmId="GTM-M2LLQ24B"/>
+       />
+      <GoogleAnalytics gaId={process.env.G_ANALYTICS || "G-32WJY99VMZ"} />
+      <GoogleTagManager gtmId={process.env.GTM || "GTM-M2LLQ24B"} />
     </head>
     <body>
     <Providers>
@@ -161,7 +173,7 @@ export default async function RootLayout({children,}: Readonly<{
           warning: 'bg-warning-400 text-gray-900 border border-0',
         },
       }}
-    />
+     />
     </body>
     </html>
   );

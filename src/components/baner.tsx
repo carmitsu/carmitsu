@@ -8,25 +8,45 @@ export default function Baner() {
   const baner = data.baner;
 
   const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('user-consent');
-    if (!consent) {
-      setIsVisible(true);
-    }
+    setIsMounted(true);
   }, []);
 
+  useEffect(() => {
+    if (!isMounted) return;
+
+    try {
+      const consent = localStorage.getItem('user-consent');
+      if (!consent) {
+        setIsVisible(true);
+      }
+    } catch (error) {
+      console.warn('localStorage is not available:', error);
+      setIsVisible(true);
+    }
+  }, [isMounted]);
+
   const handleConsent = (granted: boolean) => {
-    localStorage.setItem('user-consent', granted ? 'granted' : 'denied');
+    try {
+      localStorage.setItem('user-consent', granted ? 'granted' : 'denied');
+    } catch (error) {
+      console.warn('Could not save consent to localStorage:', error);
+    }
 
     window.dataLayer = window.dataLayer || [];
 
-    function gtag(...args: any[]) {
+    if (typeof window.gtag !== 'function') {
       // @ts-ignore
-      window.dataLayer.push(args);
+      window.gtag = function(...args: any[]) {
+        // @ts-ignore
+        window.dataLayer.push(args);
+      };
     }
 
-    gtag('consent', 'update', {
+    // @ts-ignore
+    window.gtag('consent', 'update', {
       'ad_storage': granted ? 'granted' : 'denied',
       'analytics_storage': granted ? 'granted' : 'denied',
       'ad_user_data': granted ? 'granted' : 'denied',
