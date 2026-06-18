@@ -153,7 +153,7 @@ export default async function RootLayout({children,}: Readonly<{
           `,
         }}
        />
-      <GoogleAnalytics gaId={process.env.G_ANALYTICS || "G-32WJY99VMZ"} />
+      <GoogleAnalytics gaId={process.env.G_ANALYTICS || "G-3ZWJY99VMZ"} />
       <GoogleTagManager gtmId={process.env.GTM || "GTM-M2LLQ24B"} />
     </head>
     <body>
