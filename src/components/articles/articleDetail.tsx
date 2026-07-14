@@ -23,14 +23,13 @@ export default function ArticleDetail({ article }: ArticleDetailProps) {
           <div className="space-y-4 pt-4 border-t border-default-200">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {article.images.map((asset, index) => (
-                <div key={index} className="relative rounded-xl overflow-hidden">
+                <div key={index} className="relative rounded-xl overflow-hidden h-48 sm:h-64 md:h-80">
                   <Image
                     src={asset.url}
                     alt={asset.title || article.title}
-                    width={asset.width || 800}
-                    height={asset.height || 600}
+                    fill
                     unoptimized
-                    className="w-full h-auto object-cover rounded-xl"
+                    className="object-cover rounded-xl"
                   />
                 </div>
               ))}
