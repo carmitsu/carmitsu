@@ -1,0 +1,209 @@
+{
+  "404": "Siden ble ikke funnet",
+  "language": "no",
+  "seo": {
+    "description": "CarMitsu bilreparasjon i Dobrzewino nær Tricity: Mitsubishi, Hyundai og Toyota service, diagnostikk, mekanikk og A/C. ",
+    "privacy": {
+      "title": "CarMitsu Retningslinjer for personvern",
+      "description": "Les hvordan CarMitsu samler inn og behandler personopplysninger, hvorfor vi gjør det, og hvilke rettigheter du har under GDPR."
+    },
+    "realizations": {
+      "title": "CarMitsu serviceprosjekter",
+      "description": "Se utvalgte Mitsubishi-, Hyundai- og Toyota-reparasjoner utført av CarMitsu. "
+    },
+    "articles": {
+      "title": "CarMitsu Serviceartikler",
+      "description": "Les de siste artiklene om bilservice og vedlikehold for Mitsubishi, Hyundai og Toyota."
+    }
+  },
+  "navbar": {
+    "home": "Hjem",
+    "about": "Om",
+    "contact": "Kontakt",
+    "languageList": {
+      "en": [
+        "English",
+        "https://carmitsu.com"
+      ],
+      "pl": [
+        "Polski",
+        "https://carmitsu.pl"
+      ],
+      "se": [
+        "Svenska",
+        "https://se.carmitsu.eu"
+      ],
+      "no": [
+        "Norsk",
+        "https://no.carmitsu.eu"
+      ],
+      "de": [
+        "Deutsch",
+        "https://de.carmitsu.eu"
+      ]
+    },
+    "more": {
+      "title": "Flere",
+      "parts": "Bildeler",
+      "realizations": "Erkjennelser",
+      "articles": "Artikler"
+    }
+  },
+  "hero": {
+    "title": "CarMitsu",
+    "subtitle": "Din bil, vår lidenskap!",
+    "description": [
+      "Reparasjon av alle merker, og spesialisering i Mitsubishi og alle japanske og koreanske biler.",
+      [
+        "Rask diagnostikk",
+        "Rettferdige priser",
+        "Erfaring"
+      ]
+    ],
+    "phone": "+48 692 886 336",
+    "button": "Sjekk mer"
+  },
+  "about": {
+    "about": {
+      "title": "Spesialisert service for Mitsubishi, Hyundai og Toyota kjøretøy",
+      "description": [
+        "CarMitsu er et bilfirma med mange års erfaring, som spesialiserer seg på reparasjon og vedlikehold av Mitsubishi-, Hyundai- og Toyota-kjøretøyer.",
+        "Historien vår begynte med en lidenskap for legendariske terrengbiler – Mitsubishi Pajero, L200 og Hyundai Galloper. ",
+        "Hos CarMitsu forstår vi at bilen din – enten det er en Mitsubishi, Hyundai eller Toyota – er mer enn bare et transportmiddel. "
+      ]
+    },
+    "whyUs": {
+      "title": "Hvorfor velge Carmitsu?",
+      "description": [
+        [
+          "Fornøyde kunder:",
+          "Bli med i vårt voksende fellesskap av fornøyde kunder som har stolt på våre tjenester og ekspertise."
+        ],
+        [
+          "Erfaring:",
+          "Vårt team av spesialister har lang erfaring i bransjen og forbedrer stadig sine kvalifikasjoner."
+        ],
+        [
+          "Lidenskap for biler:",
+          "Vårt arbeid er vår lidenskap, som er tydelig i hver eneste detalj av arbeidet vårt og i hvert smil hos kundene våre."
+        ],
+        [
+          "Vi reparerer alle merker og modeller:",
+          "Vi betjener også andre kjøretøy, inkludert personbiler og varebiler."
+        ],
+        [
+          "Nøyaktig diagnostikk:",
+          "Vi gjetter ikke – først sjekker vi grundig, så reparerer vi."
+        ],
+        [
+          "Ærlig tilnærming:",
+          "Vi sier tydelig hva som må gjøres og hvor mye det vil koste deg, uten skjulte gebyrer."
+        ],
+        [
+          "Rask behandling:",
+          "Vi vet at du trenger bilen din hver dag, så vi jobber effektivt for å få deg tilbake på veien så fort som mulig."
+        ]
+      ],
+      "button": "Sjekk våre anmeldelser",
+      "footer": "Kontakt oss i dag for å avtale en avtale. "
+    },
+    "services": {
+      "title": "Hva kan vi gjøre for deg?",
+      "servicesList": {
+        "carOverview": {
+          "title": "Rutinemessig og periodisk inspeksjon og reparasjon",
+          "description": "Motor og girkasse, fjæring, registerreim, clutch, bremsesystem..."
+        },
+        "guaranteeOverview": {
+          "title": "Bilinspeksjon i garantiperioden",
+          "description": "Kontrollerer den tekniske tilstanden til alle bilsystemer samtidig som garantien opprettholdes"
+        },
+        "computerDiagnostics": {
+          "title": "MUT-3 datamaskindiagnostikk",
+          "description": "Vi bruker vår unike MUT-3 diagnosedatamaskin for å gi den mest nøyaktige diagnosen og rask reparasjon for din Mitsubishi."
+        },
+        "carElectric": {
+          "title": "Elektrisk bil",
+          "description": "Elektromekanikk, elektriske bilsystemer, reparasjon av kontroller"
+        },
+        "oilChange": {
+          "title": "Utskifting av olje og forbruksvarer",
+          "description": "Motor, girkasse, differensial, servostyringssystem"
+        },
+        "airConditioning": {
+          "title": "Air Conditioning Service",
+          "description": "Uansett årstid vil klimaanlegget ditt fungere feilfritt takket være våre spesialiserte tjenester"
+        }
+      }
+    },
+    "parts": {
+      "title": "Bildeler",
+      "description": "Vi tilbyr et bredt utvalg av brukte bildeler til Mitsubishi-kjøretøyer, som sikrer høy kvalitet og pålitelighet til rimelige priser. ",
+      "button": [
+        "Sjekk tilgjengelighet:",
+        "+48 692 886 336"
+      ]
+    }
+  },
+  "realizations": {
+    "title": "Våre erkjennelser",
+    "more": "Flere erkjennelser"
+  },
+  "articles": {
+    "title": "Artikler",
+    "none": "Ingen artikler å vise",
+    "noPhoto": "Ingen bilde tilgjengelig"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "location": "Kowalska 12, 84-208 Dobrzewino, Polen",
+    "phone": [
+      "Tall:",
+      "+48 692 886 336"
+    ],
+    "email": [
+      "E-post:",
+      "biuro@carmitsu.pl"
+    ],
+    "workingHours": [
+      "Arbeidstid:",
+      "8.00-16.00"
+    ],
+    "form": {
+      "name": [
+        "Navn",
+        "Navnet ditt"
+      ],
+      "email": [
+        "E-post",
+        "Din e-postadresse"
+      ],
+      "phone": [
+        "Telefon",
+        "Telefonnummeret ditt"
+      ],
+      "message": [
+        "Beskjed",
+        "Skriv inn meldingen din her..."
+      ],
+      "submit": "Send inn"
+    },
+    "toast": {
+      "success": "Meldingen ble sendt",
+      "error": "Det oppstod en feil under sending av meldingen"
+    },
+    "howGet": "Veibeskrivelse"
+  },
+  "footer": {
+    "rights": "Alle rettigheter forbeholdt",
+    "about": "Om",
+    "contact": "Kontakt",
+    "privacy": "Personvernerklæring"
+  },
+  "baner": {
+    "title": "Vi respekterer ditt privatliv",
+    "body": "Vi bruker informasjonskapsler for å sikre at nettstedet fungerer som det skal, for å analysere trafikk og for å gi personlig tilpasset annonsering. ",
+    "yes": "Akseptere",
+    "no": "Avvis"
+  }
+}

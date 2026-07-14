@@ -21,9 +21,11 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
   
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const title = realization.title?.[language] || realization.title?.pl || '';
-  const description = realization.description?.[language] || realization.description?.pl || '';
-  
+  // If the site language is not Polish, force English for realizations
+  const displayLang = language === 'pl' ? 'pl' : 'en';
+  const title = realization.title?.[displayLang] || realization.title?.pl || '';
+  const description = realization.description?.[displayLang] || realization.description?.pl || '';
+
   const allFiles = realization.files || [];
   const cardFile = allFiles[cardFileIndex];
   const modalFile = allFiles[modalFileIndex];

@@ -1,0 +1,209 @@
+{
+  "404": "Seite nicht gefunden",
+  "language": "de",
+  "seo": {
+    "description": "CarMitsu-Autoreparatur in Dobrzewino bei der Dreistadt: Mitsubishi-, Hyundai- und Toyota-Service, Diagnose, Mechanik und Klimaanlage. ",
+    "privacy": {
+      "title": "CarMitsu-Datenschutzrichtlinie",
+      "description": "Lesen Sie, wie CarMitsu personenbezogene Daten erhebt und verarbeitet, warum wir dies tun und welche Rechte Sie gemäß der DSGVO haben."
+    },
+    "realizations": {
+      "title": "CarMitsu-Serviceprojekte",
+      "description": "Sehen Sie sich ausgewählte Reparaturen an Mitsubishi, Hyundai und Toyota an, die von CarMitsu durchgeführt wurden. "
+    },
+    "articles": {
+      "title": "CarMitsu Serviceartikel",
+      "description": "Lesen Sie die neuesten Artikel über Autoservice und -wartung für Mitsubishi, Hyundai und Toyota."
+    }
+  },
+  "navbar": {
+    "home": "Heim",
+    "about": "Um",
+    "contact": "Kontakt",
+    "languageList": {
+      "en": [
+        "English",
+        "https://carmitsu.com"
+      ],
+      "pl": [
+        "Polski",
+        "https://carmitsu.pl"
+      ],
+      "se": [
+        "Svenska",
+        "https://se.carmitsu.eu"
+      ],
+      "no": [
+        "Norsk",
+        "https://no.carmitsu.eu"
+      ],
+      "de": [
+        "Deutsch",
+        "https://de.carmitsu.eu"
+      ]
+    },
+    "more": {
+      "title": "Mehr",
+      "parts": "Autoteile",
+      "realizations": "Erkenntnisse",
+      "articles": "Artikel"
+    }
+  },
+  "hero": {
+    "title": "CarMitsu",
+    "subtitle": "Ihr Auto, unsere Leidenschaft!",
+    "description": [
+      "Reparatur aller Marken und Spezialisierung auf Mitsubishi sowie alle japanischen und koreanischen Autos.",
+      [
+        "Schnelle Diagnose",
+        "Faire Preise",
+        "Erfahrung"
+      ]
+    ],
+    "phone": "+48 692 886 336",
+    "button": "Überprüfen Sie mehr"
+  },
+  "about": {
+    "about": {
+      "title": "Spezialisierter Service für Mitsubishi-, Hyundai- und Toyota-Fahrzeuge",
+      "description": [
+        "CarMitsu ist ein Automobilunternehmen mit langjähriger Erfahrung, das sich auf die Reparatur und Wartung von Mitsubishi-, Hyundai- und Toyota-Fahrzeugen spezialisiert hat.",
+        "Unsere Geschichte begann mit einer Leidenschaft für legendäre Geländewagen – den Mitsubishi Pajero, den L200 und den Hyundai Galloper. ",
+        "Wir bei CarMitsu verstehen, dass Ihr Auto – egal ob Mitsubishi, Hyundai oder Toyota – mehr als nur ein Transportmittel ist. "
+      ]
+    },
+    "whyUs": {
+      "title": "Warum Carmitsu wählen?",
+      "description": [
+        [
+          "Zufriedene Kunden:",
+          "Treten Sie unserer wachsenden Gemeinschaft zufriedener Kunden bei, die unseren Dienstleistungen und unserem Fachwissen vertrauen."
+        ],
+        [
+          "Erfahrung:",
+          "Unser Spezialistenteam verfügt über umfassende Branchenerfahrung und qualifiziert sich ständig weiter."
+        ],
+        [
+          "Leidenschaft für Autos:",
+          "Unsere Arbeit ist unsere Leidenschaft, die sich in jedem Detail unserer Arbeit und in jedem Lächeln unserer Kunden zeigt."
+        ],
+        [
+          "Wir reparieren alle Marken und Modelle:",
+          "Wir warten auch andere Fahrzeuge, darunter Personenkraftwagen und Lieferwagen."
+        ],
+        [
+          "Genaue Diagnose:",
+          "Wir raten nicht – erst prüfen wir gründlich, dann reparieren wir."
+        ],
+        [
+          "Ehrlicher Ansatz:",
+          "Wir geben klar und deutlich an, was getan werden muss und wie viel es Sie kosten wird, ohne versteckte Gebühren."
+        ],
+        [
+          "Schnelle Abwicklung:",
+          "Wir wissen, dass Sie Ihr Auto jeden Tag brauchen, deshalb arbeiten wir effizient daran, Sie so schnell wie möglich wieder auf die Straße zu bringen."
+        ]
+      ],
+      "button": "Schauen Sie sich unsere Bewertungen an",
+      "footer": "Kontaktieren Sie uns noch heute, um einen Termin zu vereinbaren. "
+    },
+    "services": {
+      "title": "Was können wir für Sie tun?",
+      "servicesList": {
+        "carOverview": {
+          "title": "Routinemäßige und regelmäßige Inspektion und Reparatur",
+          "description": "Motor und Getriebe, Federung, Zahnriemen, Kupplung, Bremssystem..."
+        },
+        "guaranteeOverview": {
+          "title": "Fahrzeuginspektion während der Garantiezeit",
+          "description": "Überprüfung des technischen Zustands aller Fahrzeugsysteme unter Wahrung der Garantie"
+        },
+        "computerDiagnostics": {
+          "title": "MUT-3 Computerdiagnose",
+          "description": "Wir verwenden unseren einzigartigen MUT-3-Diagnosecomputer, um die genaueste Diagnose und schnelle Reparatur für Ihren Mitsubishi zu ermöglichen."
+        },
+        "carElectric": {
+          "title": "Autoelektrik",
+          "description": "Elektromechanik, Kfz-Elektrik, Steuergerätereparatur"
+        },
+        "oilChange": {
+          "title": "Austausch von Öl und Verbrauchsmaterialien",
+          "description": "Motor, Getriebe, Differenzial, Servolenkung"
+        },
+        "airConditioning": {
+          "title": "Klimaanlagenservice",
+          "description": "Unabhängig von der Jahreszeit funktioniert Ihre Klimaanlage dank unserer spezialisierten Dienstleistungen einwandfrei"
+        }
+      }
+    },
+    "parts": {
+      "title": "Autoteile",
+      "description": "Wir bieten eine große Auswahl an gebrauchten Autoteilen für Mitsubishi-Fahrzeuge und gewährleisten hohe Qualität und Zuverlässigkeit zu erschwinglichen Preisen. ",
+      "button": [
+        "Verfügbarkeit prüfen:",
+        "+48 692 886 336"
+      ]
+    }
+  },
+  "realizations": {
+    "title": "Unsere Erkenntnisse",
+    "more": "Weitere Erkenntnisse"
+  },
+  "articles": {
+    "title": "Artikel",
+    "none": "Keine Artikel zum Anzeigen vorhanden",
+    "noPhoto": "Kein Foto verfügbar"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "location": "Kowalska 12, 84-208 Dobrzewino, Polen",
+    "phone": [
+      "Nummer:",
+      "+48 692 886 336"
+    ],
+    "email": [
+      "E-Mail:",
+      "biuro@carmitsu.pl"
+    ],
+    "workingHours": [
+      "Arbeitszeit:",
+      "8:00-16:00 Uhr"
+    ],
+    "form": {
+      "name": [
+        "Name",
+        "Ihr Name"
+      ],
+      "email": [
+        "E-Mail",
+        "Ihre E-Mail-Adresse"
+      ],
+      "phone": [
+        "Telefon",
+        "Ihre Telefonnummer"
+      ],
+      "message": [
+        "Nachricht",
+        "Geben Sie hier Ihre Nachricht ein..."
+      ],
+      "submit": "Einreichen"
+    },
+    "toast": {
+      "success": "Nachricht erfolgreich gesendet",
+      "error": "Beim Senden der Nachricht ist ein Fehler aufgetreten"
+    },
+    "howGet": "Wegbeschreibung"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "about": "Um",
+    "contact": "Kontakt",
+    "privacy": "Datenschutzrichtlinie"
+  },
+  "baner": {
+    "title": "Wir respektieren Ihre Privatsphäre",
+    "body": "Wir verwenden Cookies, um die ordnungsgemäße Funktion der Website sicherzustellen, den Datenverkehr zu analysieren und personalisierte Werbung bereitzustellen. ",
+    "yes": "Akzeptieren",
+    "no": "Ablehnen"
+  }
+}

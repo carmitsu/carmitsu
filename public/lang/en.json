@@ -30,11 +30,15 @@
       ],
       "se": [
         "Svenska",
-        "https://carmitsu.se"
+        "https://se.carmitsu.eu"
       ],
       "no": [
         "Norsk",
-        "https://carmitsu.no"
+        "https://no.carmitsu.eu"
+      ],
+      "de": [
+        "Deutsch",
+        "https://de.carmitsu.eu"
       ]
     },
     "more": {
@@ -143,6 +147,11 @@
   "realizations": {
     "title": "Our realizations",
     "more": "More realizations"
+  },
+  "articles": {
+    "title": "Articles",
+    "none": "No articles to display",
+    "noPhoto": "No photo available"
   },
   "contact": {
     "title": "Contact",

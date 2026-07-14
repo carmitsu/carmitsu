@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Article, getExcerpt, formatArticleDate } from '@/utils/articles';
+import {getLanguage} from "@/utils/language";
+
+const data = await getLanguage();
 
 interface ArticlesListProps {
   articles: Article[];
@@ -11,8 +14,8 @@ export default function ArticlesList({ articles }: ArticlesListProps) {
     return (
       <section className="px-6 md:px-14 pb-3">
         <div className="space-y-4">
-          <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">Artykuły</h1>
-          <p className="text-foreground-500">Brak artykułów do wyświetlenia.</p>
+          <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">{data.articles?.title}</h1>
+          <p className="text-foreground-500">{data.articles?.none}</p>
         </div>
       </section>
     );
@@ -21,7 +24,7 @@ export default function ArticlesList({ articles }: ArticlesListProps) {
   return (
     <section className="px-6 md:px-14 pb-3">
       <div className="space-y-4">
-        <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">Artykuły</h1>
+        <h1 className="max-md:text-2xl md:text-3xl lg:text-4xl">{data.articles?.title}</h1>
         <div className="flex flex-col lg:grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
           {articles.map((article) => (
             <Link key={article.slug} href={`/articles/${article.slug}`}>
@@ -37,7 +40,7 @@ export default function ArticlesList({ articles }: ArticlesListProps) {
                     />
                   ) : (
                     <div className="w-full h-full bg-default-200 flex items-center justify-center">
-                      <span className="text-default-400">Brak zdjęcia</span>
+                      <span className="text-default-400">{data.articles?.noPhoto}</span>
                     </div>
                   )}
                 </div>

@@ -125,6 +125,8 @@ interface Realizations {
 
 interface Articles {
     title: string;
+    none: string;
+    noPhoto: string;
 }
 
 interface Contact {

@@ -1,0 +1,209 @@
+{
+  "404": "Siidu ii gávdnon",
+  "language": "se",
+  "seo": {
+    "description": "CarMitsu biiladivvun Dobrzewinos lahka Tricity: Mitsubishi, Hyundai ja Toyota bálvalus, diagnostihkka, mekanihkka ja A/C. ",
+    "privacy": {
+      "title": "CarMitsu persovdnadieđuid njuolggadusat",
+      "description": "Loga mo CarMitsu čoaggá ja gieđahallá persovdnadieđuid, manin mii dan dahkat, ja makkár vuoigatvuođat dus leat GDPR vuođul."
+    },
+    "realizations": {
+      "title": "CarMitsu bálvalusprošeavttat",
+      "description": "Geahča válljejuvvon Mitsubishi, Hyundai ja Toyota divvumiid maid CarMitsu lea čađahan. "
+    },
+    "articles": {
+      "title": "CarMitsu bálvalusartihkkalat",
+      "description": "Loga ođđaseamos artihkkaliid Mitsubishi, Hyundai ja Toyota biillaid bálvalusa ja bajásdoallama birra."
+    }
+  },
+  "navbar": {
+    "home": "Ruoktu",
+    "about": "Birra",
+    "contact": "Oktavuohta",
+    "languageList": {
+      "en": [
+        "English",
+        "https://carmitsu.com"
+      ],
+      "pl": [
+        "Polski",
+        "https://carmitsu.pl"
+      ],
+      "se": [
+        "Svenska",
+        "https://se.carmitsu.eu"
+      ],
+      "no": [
+        "Norsk",
+        "https://no.carmitsu.eu"
+      ],
+      "de": [
+        "Deutsch",
+        "https://de.carmitsu.eu"
+      ]
+    },
+    "more": {
+      "title": "Eambbo",
+      "parts": "Biilaoasit",
+      "realizations": "Ollašuvvamat",
+      "articles": "Artihkkalat"
+    }
+  },
+  "hero": {
+    "title": "CarMitsu",
+    "subtitle": "Du biila, min áŋgirvuohta!",
+    "description": [
+      "Buot merkejuvvon biillaid divvun, ja spesialiseren Mitsubishii ja buot japánalaš ja korealaš biillaide.",
+      [
+        "Jođánit diagnostihkka",
+        "Vuoiggalaš hattit",
+        "Vásáhus"
+      ]
+    ],
+    "phone": "+48 692 886 336",
+    "button": "Geahča eanet"
+  },
+  "about": {
+    "about": {
+      "title": "Erenoamášbálvalus Mitsubishi, Hyundai ja Toyota biillaide",
+      "description": [
+        "CarMitsu lea biilafitnodat mas lea máŋggaid jagiid vásáhus, ja mii lea spesialiseren Mitsubishi, Hyundai ja Toyota biillaid divvumii ja bajásdoallamii.",
+        "Min muitalus álggii dainna ahte mii beroštit dovddus off-road-biillaid ektui – Mitsubishi Pajero, L200 ja Hyundai Galloper. ",
+        "CarMitsu fitnodagas mii ipmirdit ahte du biila – leš dal Mitsubishi, Hyundai dahje Toyota – ii leat dušše fievrridanvuohki. "
+      ]
+    },
+    "whyUs": {
+      "title": "Manne válljet Carmitsu?",
+      "description": [
+        [
+          "Duđavaš kundarat:",
+          "Searvva min stuorrugoahtán servodahkii mas leat duhtavaš kundarat geat leat luohttán min bálvalusaide ja gelbbolašvuhtii."
+        ],
+        [
+          "Vásáhus:",
+          "Min fágajoavkkus lea viiddis vásáhus ealáhusas ja sii bissovaččat nannejit sin gelbbolašvuođa."
+        ],
+        [
+          "Áŋgirvuohta biillaide:",
+          "Min bargu lea min beroštupmi, mii boahtá ovdan min barggu juohke detáljas ja min kundariid juohke čalmmiin."
+        ],
+        [
+          "Mii divvut buot márkaniid ja málliid:",
+          "Mii maid bálvalit eará biillaid, earret eará mátkkoštanbiillaid ja fievrridanbiillaid."
+        ],
+        [
+          "Dárkilis diagnosa:",
+          "Mii eat árvit – vuos vuđolaččat iskat, de divvut."
+        ],
+        [
+          "Rehálaš vuohki:",
+          "Mii čilget čielgasit maid ferte dahkat ja man olu dat máksá, ii ge leat čihkkojuvvon máksu."
+        ],
+        [
+          "Jođánit jorggiheapmi:",
+          "Mii diehtit ahte don dárbbašat biilla juohke beaivvi, nu ahte mii bargat effektiivvalaččat vai beasat fas johtui nu johtilit go vejolaš."
+        ]
+      ],
+      "button": "Geahča min árvvoštallamiid",
+      "footer": "Váldde oktavuođa minguin odne vai sáhtát diŋgot áiggi. "
+    },
+    "services": {
+      "title": "Maid mii sáhttit dahkat du ovddas?",
+      "servicesList": {
+        "carOverview": {
+          "title": "Rutiinnalaš ja áigodatlaš dárkkisteapmi ja divvun",
+          "description": "Mohtor ja girjeboksa, vuodjin, áigemearri, kopling, bissehanvuogádat..."
+        },
+        "guaranteeOverview": {
+          "title": "Biilla dárkkisteapmi gárantiijaáigodagas",
+          "description": "Dárkkistit buot biilavuogádagaid teknihkalaš dili seammás go doalat gárantiija"
+        },
+        "computerDiagnostics": {
+          "title": "MUT-3 dihtordiagnostihkka",
+          "description": "Mii geavahit min erenoamáš MUT-3 diagnostihkalaš dihtora vai sáhttit fállat dárkilis diagnosa ja jođánit divvut du Mitsubishi."
+        },
+        "carElectric": {
+          "title": "Biilaelrávdnji",
+          "description": "Elektromekanihkka, biilla elrávnnji ortnegat, stivrejeaddjiid divvun"
+        },
+        "oilChange": {
+          "title": "Oljo- ja geavahanávdnasiid sadjásaš",
+          "description": "Mohtor, girjeboksa, differensiála, servostivrenvuogádat"
+        },
+        "airConditioning": {
+          "title": "Klimabálvalus",
+          "description": "Beroškeahttá áigodagas, de du klimatihkkár doaibmá vealaheami haga min erenoamáš bálvalusaid geažil"
+        }
+      }
+    },
+    "parts": {
+      "title": "Biilaoasit",
+      "description": "Mii fállat máŋggalágan válljema geavahuvvon biilaosiin Mitsubishi biillaide, mii sihkkarastá alla kvalitehta ja luohtehahttivuođa hálbbes haddái. ",
+      "button": [
+        "Dárkkis gávdnomis:",
+        "+48 692 886 336"
+      ]
+    }
+  },
+  "realizations": {
+    "title": "Min ollašuvvamat",
+    "more": "Eanet ollašuvvamat"
+  },
+  "articles": {
+    "title": "Artihkkalat",
+    "none": "Ii leat mihkkege artihkkaliid mat galget čájehuvvot",
+    "noPhoto": "Ii gávdno govva"
+  },
+  "contact": {
+    "title": "Oktavuohta",
+    "location": "Kowalska 12, 84-208 Dobrzewino, Poland",
+    "phone": [
+      "Nummir:",
+      "+48 692 886 336"
+    ],
+    "email": [
+      "E-poasta:",
+      "biuro@carmitsu.pl"
+    ],
+    "workingHours": [
+      "Bargoáigi:",
+      "8:00-16:00"
+    ],
+    "form": {
+      "name": [
+        "Namma",
+        "Du namma"
+      ],
+      "email": [
+        "E-poasta",
+        "Du e-poastačujuhus"
+      ],
+      "phone": [
+        "Telefovdna",
+        "Du telefovdnanummir"
+      ],
+      "message": [
+        "Diehtu",
+        "Čále iežat dieđu dása..."
+      ],
+      "submit": "Guođđit"
+    },
+    "toast": {
+      "success": "Diehtu lea sáddejuvvon lihkostuvvan",
+      "error": "Dáhpáhuvai meattáhus go sáddii dieđu"
+    },
+    "howGet": "Njuolggadusat"
+  },
+  "footer": {
+    "rights": "Buot vuoigatvuođat leat suddjejuvvon",
+    "about": "Birra",
+    "contact": "Oktavuohta",
+    "privacy": "Persovdnadieđuid njuolggadusat"
+  },
+  "baner": {
+    "title": "Mii gudnejahttit du persovnnalašvuođa",
+    "body": "Mii geavahit cookies sihkkarastit ahte neahttasiidu doaibmá bures, analyseret trafihka ja fállat persovnnalaš reklámaid. ",
+    "yes": "Dohkkehit",
+    "no": "Hilgut"
+  }
+}
