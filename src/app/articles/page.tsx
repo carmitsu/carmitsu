@@ -34,7 +34,8 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ArticlesPage() {
-  const articles = await getArticles();
+  const language = process.env.SITE_LANGUAGE || 'pl';
+  const articles = await getArticles(language);
 
   return (
     <main>

@@ -14,6 +14,7 @@ export interface Article {
   body: Document;
   images: NormalizedAsset[];
   createdAt: string;
+  tags: string[];
 }
 
 export interface ContentfulAsset {

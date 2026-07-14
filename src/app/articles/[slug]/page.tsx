@@ -12,7 +12,8 @@ interface ArticlePageProps {
 }
 
 export async function generateStaticParams() {
-  const articles = await getArticles();
+  const language = process.env.SITE_LANGUAGE || 'pl';
+  const articles = await getArticles(language);
   return articles.map((article) => ({
     slug: article.slug,
   }));
@@ -20,7 +21,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const article = await getArticleBySlug(slug);
+  const language = process.env.SITE_LANGUAGE || 'pl';
+  const article = await getArticleBySlug(slug, language);
 
   if (!article) {
     return { title: 'Artykuł nie znaleziony' };
@@ -47,7 +49,8 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
   const { slug } = await params;
-  const article = await getArticleBySlug(slug);
+  const language = process.env.SITE_LANGUAGE || 'pl';
+  const article = await getArticleBySlug(slug, language);
 
   if (!article) {
     notFound();

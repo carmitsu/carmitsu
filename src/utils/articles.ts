@@ -35,6 +35,19 @@ function normalizeAsset(asset: any) {
   };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function extractTags(entry: AnyEntry): string[] {
+  const tags = entry.metadata?.tags;
+  if (!Array.isArray(tags)) return [];
+  return tags.map((t: AnyEntry) => t.sys?.id).filter(Boolean);
+}
+
+function matchesLanguage(tags: string[], language?: string): boolean {
+  if (!language) return true;
+  if (tags.length === 0) return true;
+  return tags.includes(language);
+}
+
 function extractPlainText(body: Document): string {
   const texts: string[] = [];
   for (const node of body.content) {
@@ -49,45 +62,53 @@ function extractPlainText(body: Document): string {
   return texts.join(' ').trim();
 }
 
-export async function getArticles(): Promise<Article[]> {
-  try {
-    const client = getContentfulClient();
-    const response = await client.getEntries({
-      content_type: 'article',
-      order: ['-sys.createdAt'],
-    });
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function entryToArticle(entry: AnyEntry, assetMap: Map<string, AnyEntry>): Article {
+  const images = (entry.fields.images || [])
+    .map((img: AnyEntry) => assetMap.get(img.sys.id))
+    .filter((a: AnyEntry) => !!a)
+    .map((a: AnyEntry) => normalizeAsset(a));
 
-    const assetMap = new Map<string, AnyEntry>();
-    if (response.includes?.Asset) {
-      for (const asset of response.includes.Asset) {
-        assetMap.set(asset.sys.id, asset);
-      }
+  return {
+    slug: generateSlug(entry.fields.title as string),
+    title: entry.fields.title as string,
+    body: entry.fields.body as Document,
+    images,
+    createdAt: entry.sys.createdAt as string,
+    tags: extractTags(entry),
+  };
+}
+
+async function fetchAllArticles(): Promise<Article[]> {
+  const client = getContentfulClient();
+  const response = await client.getEntries({
+    content_type: 'article',
+    order: ['-sys.createdAt'],
+  });
+
+  const assetMap = new Map<string, AnyEntry>();
+  if (response.includes?.Asset) {
+    for (const asset of response.includes.Asset) {
+      assetMap.set(asset.sys.id, asset);
     }
+  }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return response.items.map((entry: AnyEntry) => {
-      const images = (entry.fields.images || [])
-        .map((img: AnyEntry) => assetMap.get(img.sys.id))
-        .filter((a: AnyEntry) => !!a)
-        .map((a: AnyEntry) => normalizeAsset(a));
+  return response.items.map((entry: AnyEntry) => entryToArticle(entry, assetMap));
+}
 
-      return {
-        slug: generateSlug(entry.fields.title as string),
-        title: entry.fields.title as string,
-        body: entry.fields.body as Document,
-        images,
-        createdAt: entry.sys.createdAt as string,
-      };
-    });
+export async function getArticles(language?: string): Promise<Article[]> {
+  try {
+    const all = await fetchAllArticles();
+    return all.filter((a) => matchesLanguage(a.tags, language));
   } catch (err) {
     console.error('Could not fetch articles:', err);
     return [];
   }
 }
 
-export async function getArticleBySlug(slug: string): Promise<Article | null> {
+export async function getArticleBySlug(slug: string, language?: string): Promise<Article | null> {
   try {
-    const articles = await getArticles();
+    const articles = await getArticles(language);
     return articles.find((a) => a.slug === slug) || null;
   } catch (err) {
     console.error('Could not fetch article:', err);
