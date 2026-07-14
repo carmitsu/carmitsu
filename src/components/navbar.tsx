@@ -47,6 +47,7 @@ export default function Navigation() {
             <DropdownMenu aria-label="Static Actions">
               <DropdownItem key="parts" href="/#Parts">{navbar?.more.parts}</DropdownItem>
               <DropdownItem key="realizations" href="/#Realizations">{navbar?.more.realizations}</DropdownItem>
+              <DropdownItem key="articles" href="/articles">{navbar?.more.articles}</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
@@ -103,6 +104,11 @@ export default function Navigation() {
         <NavbarMenuItem>
           <Link color="foreground" className="text-xl" href="/#Realizations" onPress={() => setIsMenuOpen(false)}>
             {navbar?.more.realizations}
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link color="foreground" className="text-xl" href="/articles" onPress={() => setIsMenuOpen(false)}>
+            {navbar?.more.articles}
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>

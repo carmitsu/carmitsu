@@ -9,6 +9,10 @@
     "realizations": {
       "title": "Realizacje serwisu CarMitsu",
       "description": "Zobacz realizacje napraw i serwisów wykonanych w CarMitsu dla Mitsubishi, Hyundai i Toyota. Sprawdź jakość naszej pracy i umów wizytę."
+    },
+    "articles": {
+      "title": "Artykuły serwisu CarMitsu",
+      "description": "Przeczytaj najnowsze artykuły na temat serwisu i konserwacji samochodów Mitsubishi, Hyundai i Toyota."
     }
   },
   "navbar": {
@@ -36,7 +40,8 @@
     "more": {
       "title": "Więcej",
       "parts": "Części samochodowe",
-      "realizations": "Realizacje"
+      "realizations": "Realizacje",
+      "articles": "Artykuły"
     }
   },
   "hero": {

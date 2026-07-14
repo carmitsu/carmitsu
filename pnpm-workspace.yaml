@@ -1,0 +1,4 @@
+allowBuilds:
+  sharp: true
+publicHoistPattern:
+  - "*@nextui-org/*"

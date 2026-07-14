@@ -25,6 +25,7 @@ export interface Lang{
   hero?: Hero;
   about?: About;
   realizations?: Realizations;
+  articles?: Articles;
   contact?: Contact;
   footer?: Footer;
   404?: string;
@@ -41,6 +42,10 @@ interface Seo {
     title: string;
     description: string;
   }
+  articles: {
+    title: string;
+    description: string;
+  }
 }
 
 interface Navbar {
@@ -54,6 +59,7 @@ interface Navbar {
     title: string;
     parts: string;
     realizations: string;
+    articles: string;
   }
 }
 
@@ -115,6 +121,10 @@ interface About {
 interface Realizations {
   title: string;
   more: string;
+}
+
+interface Articles {
+    title: string;
 }
 
 interface Contact {
