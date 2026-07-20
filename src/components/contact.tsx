@@ -45,7 +45,22 @@ export default function Contact() {
                 placeholder={contact?.form.phone[1]}
                 variant="faded"
               />
-
+            </div>
+            <div className="flex space-x-2">
+              <Input
+                id="vin"
+                type="text"
+                label={contact?.form.vin[0]}
+                placeholder={contact?.form.vin[1]}
+                variant="faded"
+              />
+              <Input
+                id="registration"
+                type="text"
+                label={contact?.form.registration[0]}
+                placeholder={contact?.form.registration[1]}
+                variant="faded"
+              />
             </div>
             <div>
               <Input

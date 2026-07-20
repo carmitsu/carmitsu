@@ -182,6 +182,14 @@
         "Telefovdna",
         "Du telefovdnanummir"
       ],
+      "vin": [
+        "VIN-nummir",
+        "VIN-nummir daga biilla"
+      ],
+      "registration": [
+        "Rekisterinummir",
+        "Rekisterinummir daga biilla"
+      ],
       "message": [
         "Diehtu",
         "Čále iežat dieđu dása..."

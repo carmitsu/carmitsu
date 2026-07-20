@@ -182,6 +182,14 @@
         "Telefon",
         "Telefonnummeret ditt"
       ],
+      "vin": [
+        "VIN-nummer",
+        "VIN-nummer for ditt kjøretøy"
+      ],
+      "registration": [
+        "Registreringsnummer",
+        "Registreringsnummer for ditt kjøretøy"
+      ],
       "message": [
         "Beskjed",
         "Skriv inn meldingen din her..."

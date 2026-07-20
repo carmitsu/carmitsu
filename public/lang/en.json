@@ -175,11 +175,19 @@
       ],
       "email": [
         "E-Mail",
-        "Your e-mail adress"
+        "Your e-mail address"
       ],
       "phone": [
         "Phone",
         "Your phone number"
+      ],
+      "vin": [
+        "VIN Number",
+        "VIN Number of your vehicle"
+      ],
+      "registration": [
+        "Registration Number",
+        "Registration Number of your vehicle"
       ],
       "message": [
         "Message",

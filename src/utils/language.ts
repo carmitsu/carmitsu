@@ -139,6 +139,8 @@ interface Contact {
     name: string[];
     email: string[];
     phone: string[];
+    vin: string[];
+    registration: string[];
     message: string[];
     submit: string;
   }

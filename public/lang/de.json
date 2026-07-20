@@ -182,6 +182,14 @@
         "Telefon",
         "Ihre Telefonnummer"
       ],
+      "vin": [
+        "VIN-Nummer",
+        "VIN-Nummer Ihres Fahrzeugs"
+      ],
+      "registration": [
+        "Registrierungsnummer",
+        "Registrierungsnummer Ihres Fahrzeugs"
+      ],
       "message": [
         "Nachricht",
         "Geben Sie hier Ihre Nachricht ein..."
