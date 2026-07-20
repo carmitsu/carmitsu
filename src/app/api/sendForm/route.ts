@@ -2,8 +2,8 @@ import formData from "form-data";
 import Mailgun from "mailgun.js";
 
 export async function POST(req: Request){
-  const { name, email, phone, message } = await req.json();
-  console.log(name, email, phone, message);
+  const { name, email, phone, vin, registration, message } = await req.json();
+  console.log(name, email, phone, vin, registration, message);
   const date = new Date().toLocaleString();
   console.log(date);
   let mailgun = new Mailgun(formData);
@@ -12,7 +12,7 @@ export async function POST(req: Request){
     from: email,
     to: [process.env.MAILGUN_EMAIL || ''],
     subject: `Message from ${name}`,
-    text: `Date: ${date}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+    text: `Date: ${date}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nVIN: ${vin}\nRegistration: ${registration}\nMessage: ${message}`
   };
   console.log(messageData);
   let sendStatus: boolean = false;

@@ -95,6 +95,8 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>, toast: any): 
     name: (document.getElementById('name') as HTMLInputElement).value,
     email: (document.getElementById('email') as HTMLInputElement).value,
     phone: (document.getElementById('phone') as HTMLInputElement).value,
+    vin: (document.getElementById('vin') as HTMLInputElement).value,
+    registration: (document.getElementById('registration') as HTMLInputElement).value,
     message: (document.getElementById('message') as HTMLInputElement).value,
   }
   if (Message.phone === '') {
