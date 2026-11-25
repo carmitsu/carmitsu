@@ -1,6 +1,6 @@
 'use client'
 import {useState, useEffect} from "react";
-import {Button} from "@nextui-org/button";
+import {Button} from "@heroui/react";
 import {useLanguage} from "@/contexts/LanguageContext";
 
 export default function Baner() {

@@ -15,7 +15,7 @@ import {
   ModalBody,
   ModalFooter,
   Spinner,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { Search, Trash2, Upload, FolderOpen } from "lucide-react";
 
 export default function FilesPage() {

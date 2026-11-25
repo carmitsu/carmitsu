@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button, Input, Card, CardBody, CardHeader } from '@nextui-org/react';
+import { Button, Input, Card, CardBody, CardHeader } from '@heroui/react';
 import { Lock } from 'lucide-react';
 
 export default function PanelLoginPage() {

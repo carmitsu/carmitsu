@@ -1,6 +1,6 @@
 'use client';
 import "leaflet/dist/leaflet.css";
-import {Input, Textarea, Button} from "@nextui-org/react";
+import {Input, Textarea, Button} from "@heroui/react";
 import axios from "axios";
 import {toast as toaster} from "sonner";
 import dynamic from 'next/dynamic';

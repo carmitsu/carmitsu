@@ -1,6 +1,31 @@
 'use server';
 
-const lang = require('/public/lang/'+ (process.env.SITE_LANGUAGE || 'en') +'.json');
+import fs from 'node:fs';
+import path from 'node:path';
+import de from '../../public/lang/de.json';
+import en from '../../public/lang/en.json';
+import no from '../../public/lang/no.json';
+import pl from '../../public/lang/pl.json';
+import se from '../../public/lang/se.json';
+
+const LANGUAGES: Record<string, Lang> = {
+  de: de as unknown as Lang,
+  en: en as unknown as Lang,
+  no: no as unknown as Lang,
+  pl: pl as unknown as Lang,
+  se: se as unknown as Lang,
+};
+
+function loadLang(): Lang {
+  const code = process.env.SITE_LANGUAGE || 'en';
+  if (LANGUAGES[code]) {
+    return LANGUAGES[code];
+  }
+  const filePath = path.join(process.cwd(), 'public', 'lang', `${code}.json`);
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as Lang;
+}
+
+const lang = loadLang();
 // console.log(`Server is starting with language: ${process.env.SITE_LANGUAGE}`);
 
 function validateLang(lang: Lang) {

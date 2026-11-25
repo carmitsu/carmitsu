@@ -1,9 +1,6 @@
-import {TileLayer} from "react-leaflet/TileLayer";
-import {Marker} from "react-leaflet";
-import {Icon} from "leaflet";
-import {MapContainer} from "react-leaflet/MapContainer";
-import {Button} from "@nextui-org/button";
-import {Link} from "@nextui-org/link";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { Icon } from "leaflet";
+import { Button, Link } from "@heroui/react";
 import {useLanguage} from "@/contexts/LanguageContext";
 
 export default function Map() {

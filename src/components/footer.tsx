@@ -1,6 +1,6 @@
 'use client';
 import {RiCopyrightLine, RiFacebookCircleLine, RiInstagramLine, RiTiktokLine} from "@remixicon/react";
-import {Link} from "@nextui-org/react";
+import {Link} from "@heroui/react";
 import {useLanguage} from "@/contexts/LanguageContext";
 
 export default function Footer() {

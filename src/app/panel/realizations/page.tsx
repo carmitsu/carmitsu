@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRealizations } from "@/hooks/useRealizations";
 import RealizationsTable from "../components/RealizationsTable";
-import { Button, Spinner } from "@nextui-org/react";
+import { Button, Spinner } from "@heroui/react";
 import { Plus } from "lucide-react";
 
 export default function RealizationsPage() {

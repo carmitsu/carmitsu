@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
-import {Button} from "@nextui-org/button";
-import {Link} from "@nextui-org/link";
+import {Button, Link} from "@heroui/react";
 import {useLanguage} from "@/contexts/LanguageContext";
 import HeroBackground from "/public/images/hero.jpg";
 

@@ -29,7 +29,7 @@ import {
   DropdownItem,
   Checkbox,
   cn,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { toast } from "sonner";
 
 interface FileGridProps {

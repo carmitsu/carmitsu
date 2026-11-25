@@ -3,10 +3,9 @@ import Services from "@/components/services";
 import Image from "next/image";
 import aboutImage from "/public/images/about.jpg";
 import whyUsImage from "/public/images/whyUs.jpg";
-import {Link, Skeleton} from "@nextui-org/react";
+import {Button, Link, Skeleton} from "@heroui/react";
 import {useState} from "react";
 import {useLanguage} from "@/contexts/LanguageContext";
-import {Button} from "@nextui-org/button";
 
 export default function About() {
   const { data } = useLanguage();

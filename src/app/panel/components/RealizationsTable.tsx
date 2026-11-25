@@ -21,7 +21,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { Edit, Trash2, Plus, ImageIcon, Calendar, Files } from "lucide-react";
 
 interface RealizationsTableProps {

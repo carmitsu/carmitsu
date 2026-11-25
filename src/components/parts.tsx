@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import parts from "/public/images/parts.jpg";
-import {Skeleton, Button, Link} from "@nextui-org/react";
+import {Skeleton, Button, Link} from "@heroui/react";
 import {useLanguage} from "@/contexts/LanguageContext";
 
 export default function Parts() {

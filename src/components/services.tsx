@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import {Skeleton} from "@nextui-org/react";
+import {Skeleton} from "@heroui/react";
 import React from "react";
 import {useLanguage} from "@/contexts/LanguageContext";
 

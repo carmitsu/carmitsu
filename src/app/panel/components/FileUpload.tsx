@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from "react";
 import { Upload, X, CheckCircle, AlertCircle } from "lucide-react";
-import { cn } from "@nextui-org/react";
+import { cn } from "@heroui/react";
 
 interface UploadedFile {
   file: File;

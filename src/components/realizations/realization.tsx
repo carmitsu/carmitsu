@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from "react";
-import { Skeleton, useDisclosure, Modal, ModalContent, ModalHeader, ModalBody } from "@nextui-org/react";
+import { Skeleton, useDisclosure, Modal, ModalContent, ModalHeader, ModalBody } from "@heroui/react";
 import Image from "next/image";
 import { Realization } from "@/utils/realizations";
 import { useLanguage } from "@/contexts/LanguageContext";

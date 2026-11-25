@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from "react";
-import { Spinner } from "@nextui-org/react";
+import { Spinner } from "@heroui/react";
 import { Realization } from "@/utils/realizations";
 import RealizationCard from "@/components/realizations/realization";
 import { useLanguage } from "@/contexts/LanguageContext";

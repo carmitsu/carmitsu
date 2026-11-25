@@ -6,7 +6,7 @@ import {useLanguage} from "@/contexts/LanguageContext";
 import {
   Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button, Dropdown,
   DropdownTrigger, DropdownMenu, DropdownItem,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 export default function Navigation() {
   const { language, data } = useLanguage();

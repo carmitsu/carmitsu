@@ -9,7 +9,7 @@ import {
   ChevronRight,
   LayoutDashboard
 } from "lucide-react";
-import { Tooltip } from "@nextui-org/react";
+import { Tooltip } from "@heroui/react";
 import { useState } from "react";
 
 const navItems = [

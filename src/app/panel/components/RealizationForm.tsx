@@ -19,7 +19,7 @@ import {
   ModalBody,
   ModalFooter,
   Tooltip,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import {
   Save,
   ArrowLeft,

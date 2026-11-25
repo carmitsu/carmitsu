@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import RealizationForm from "@/app/panel/components/RealizationForm";
 import { Realization } from "@/app/panel/types";
-import { Spinner } from "@nextui-org/react";
+import { Spinner } from "@heroui/react";
 
 function getAuthToken(): string {
   if (typeof window === "undefined") return "";
