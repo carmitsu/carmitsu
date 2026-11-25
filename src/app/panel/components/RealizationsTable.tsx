@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Realization, useRealizations } from "@/hooks/useRealizations";
-import { getPublicUrl } from "@/utils/s3";
+import { getPublicUrl } from "@/lib/storage-url";
 import {
   Table,
   TableHeader,

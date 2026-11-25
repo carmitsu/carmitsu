@@ -38,14 +38,11 @@ export default function Baner() {
     window.dataLayer = window.dataLayer || [];
 
     if (typeof window.gtag !== 'function') {
-      // @ts-ignore
-      window.gtag = function(...args: any[]) {
-        // @ts-ignore
-        window.dataLayer.push(args);
+      window.gtag = (...args: unknown[]) => {
+        window.dataLayer?.push(args);
       };
     }
 
-    // @ts-ignore
     window.gtag('consent', 'update', {
       'ad_storage': granted ? 'granted' : 'denied',
       'analytics_storage': granted ? 'granted' : 'denied',

@@ -1,6 +1,6 @@
 import { supabaseAdmin } from './supabase';
 import { Realization } from '@/types/realization';
-import { getPublicUrl } from './s3';
+import { getPublicUrl } from '@/lib/storage-url';
 
 export type { Realization } from '@/types/realization';
 

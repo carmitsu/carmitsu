@@ -3,6 +3,7 @@ import { deleteFile } from '@/utils/s3';
 import { getTokenFromRequest, validateToken } from '@/lib/api-auth';
 import { handleApiError } from '@/lib/errors';
 import { logger } from '@/lib/logger';
+import { isSafeFileName } from '@/lib/validators';
 
 export const dynamic = 'force-dynamic';
 
@@ -48,6 +49,12 @@ export async function DELETE(request: NextRequest) {
 
     for (const fileName of fileNames) {
       if (!fileName) continue;
+
+      if (!isSafeFileName(fileName)) {
+        results.failed.push({ name: fileName, error: 'Nieprawidłowa nazwa pliku' });
+        logger.warn(`Odrzucono nieprawidłową nazwę pliku przy usuwaniu: ${fileName}`, { operation: 'delete' });
+        continue;
+      }
 
       try {
         await deleteFile(fileName);

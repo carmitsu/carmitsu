@@ -112,10 +112,26 @@ export async function POST(request: NextRequest) {
     }
 
     let finalFileName: string;
-    if (customName) {
-      finalFileName = customName.endsWith(`.${extension}`) ? customName : `${customName}.${extension}`;
+    if (customName && customName.trim()) {
+      const sanitizedCustom = sanitizeFilename(customName);
+      if (!sanitizedCustom) {
+        return NextResponse.json(
+          { error: { code: 'VALIDATION_ERROR', message: 'Nieprawidłowa nazwa pliku' } },
+          { status: 400 }
+        );
+      }
+      finalFileName = sanitizedCustom.toLowerCase().endsWith(`.${extension}`)
+        ? sanitizedCustom
+        : `${sanitizedCustom}.${extension}`;
     } else {
       finalFileName = sanitizeFilename(originalFileName);
+    }
+
+    if (!finalFileName) {
+      return NextResponse.json(
+        { error: { code: 'VALIDATION_ERROR', message: 'Nieprawidłowa nazwa pliku' } },
+        { status: 400 }
+      );
     }
 
     const buffer = Buffer.from(await file.arrayBuffer());

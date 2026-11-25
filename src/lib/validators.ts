@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-export const ALLOWED_IMAGE_EXTENSIONS = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'avif'] as const;
+export const ALLOWED_IMAGE_EXTENSIONS = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'avif'] as const;
 export const ALLOWED_VIDEO_EXTENSIONS = ['mp4', 'webm', 'mov'] as const;
 export const ALLOWED_EXTENSIONS = [...ALLOWED_IMAGE_EXTENSIONS, ...ALLOWED_VIDEO_EXTENSIONS] as const;
 
@@ -9,7 +9,6 @@ export const ALLOWED_IMAGE_MIMES = [
   'image/png',
   'image/gif',
   'image/webp',
-  'image/svg+xml',
   'image/avif',
 ] as const;
 
@@ -53,9 +52,21 @@ export function isVideoMimeType(mimeType: string): boolean {
   return ALLOWED_VIDEO_MIMES.includes(mimeType as typeof ALLOWED_VIDEO_MIMES[number]);
 }
 
+export function isSafeFileName(fileName: string): boolean {
+  if (!fileName || fileName.length > 255) return false;
+  if (fileName.includes('\0') || fileName.includes('..') || fileName.includes('/') || fileName.includes('\\')) {
+    return false;
+  }
+  return !fileName.startsWith('.');
+}
+
 export function sanitizeFilename(filename: string): string {
   return filename
     .trim()
+    .replace(/[\x00-\x1f\x7f]/g, '')
+    .replace(/[/\\]/g, '')
+    .replace(/\.\.+/g, '.')
+    .replace(/^\.+/, '')
     .replace(/[<>:"|?*]/g, '')
     .replace(/\s+/g, '_')
     .replace(/_{2,}/g, '_')
@@ -67,6 +78,7 @@ export const uploadFileSchema = z.object({
     .string()
     .min(1, 'Nazwa pliku jest wymagana')
     .max(255, 'Nazwa pliku jest zbyt długa')
+    .refine(isSafeFileName, 'Nazwa pliku zawiera niedozwoloną ścieżkę')
     .refine(
       (name) => !/[<>:"/\\|?*]/.test(name),
       'Nazwa pliku zawiera niedozwolone znaki (<>:"|?*)'
@@ -87,14 +99,14 @@ export const uploadFileSchema = z.object({
 export function createUploadValidation(data: { name: string; size: number; type: string }) {
   const maxSize = getMaxSizeForMime(data.type);
   const maxSizeMB = maxSize / (1024 * 1024);
-  
+
   if (data.size > maxSize) {
     return {
       valid: false,
       error: `Plik "${data.name}" jest zbyt duży. Maksymalny rozmiar: ${maxSizeMB}MB`,
     };
   }
-  
+
   return { valid: true };
 }
 
@@ -102,11 +114,13 @@ export const renameFileSchema = z.object({
   oldName: z
     .string()
     .min(1, 'Stara nazwa jest wymagana')
-    .max(255, 'Nazwa jest zbyt długa'),
+    .max(255, 'Nazwa jest zbyt długa')
+    .refine(isSafeFileName, 'Stara nazwa pliku jest nieprawidłowa'),
   newName: z
     .string()
     .min(1, 'Nowa nazwa jest wymagana')
     .max(255, 'Nazwa jest zbyt długa')
+    .refine(isSafeFileName, 'Nowa nazwa pliku jest nieprawidłowa')
     .refine(
       (name) => !/[<>:"/\\|?*]/.test(name),
       'Nazwa pliku zawiera niedozwolone znaki'
@@ -135,6 +149,32 @@ export const realizationSchema = z.object({
       type: z.enum(['image', 'video', 'other']),
     })
   ).min(1, 'Wymagany jest przynajmniej jeden plik'),
+});
+
+const noHeaderInjection = (val: string) => !/[\r\n]/.test(val);
+
+export const contactFormSchema = z.object({
+  name: z
+    .string()
+    .trim()
+    .min(1, 'Imię jest wymagane')
+    .max(120, 'Imię jest zbyt długie')
+    .refine(noHeaderInjection, 'Nieprawidłowe znaki w polu imię'),
+  email: z
+    .string()
+    .trim()
+    .email('Nieprawidłowy adres email')
+    .max(254, 'Adres email jest zbyt długi')
+    .refine(noHeaderInjection, 'Nieprawidłowe znaki w adresie email'),
+  phone: z.string().trim().max(40, 'Numer telefonu jest zbyt długi').optional().default(''),
+  vin: z.string().trim().max(32, 'Numer VIN jest zbyt długi').optional().default(''),
+  registration: z.string().trim().max(32, 'Numer rejestracyjny jest zbyt długi').optional().default(''),
+  message: z
+    .string()
+    .trim()
+    .min(1, 'Wiadomość jest wymagana')
+    .max(5000, 'Wiadomość jest zbyt długa'),
+  website: z.string().max(200).optional().default(''),
 });
 
 export type AllowedExtension = typeof ALLOWED_EXTENSIONS[number];

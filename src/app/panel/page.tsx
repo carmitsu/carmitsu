@@ -9,15 +9,38 @@ export default function PanelLoginPage() {
   const router = useRouter();
   const [token, setToken] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!token.trim()) return;
-    
+
     setLoading(true);
-    
-    sessionStorage.setItem('panel_token', token);
-    router.push('/panel/realizations');
+    setError(null);
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ token: token.trim() }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        setError(data?.error?.message || 'Nieprawidłowy token dostępowy');
+        setLoading(false);
+        return;
+      }
+
+      sessionStorage.removeItem('panel_token');
+      router.push('/panel/realizations');
+      router.refresh();
+    } catch {
+      setError('Błąd połączenia z serwerem');
+      setLoading(false);
+    }
   };
 
   return (
@@ -39,7 +62,12 @@ export default function PanelLoginPage() {
               label="Token"
               placeholder="Wprowadź token dostępowy"
               value={token}
-              onChange={(e) => setToken(e.target.value)}
+              onChange={(e) => {
+                setToken(e.target.value);
+                if (error) setError(null);
+              }}
+              isInvalid={!!error}
+              errorMessage={error}
               isRequired
               autoFocus
             />

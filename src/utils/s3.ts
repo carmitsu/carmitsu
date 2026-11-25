@@ -1,6 +1,7 @@
 import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand, ListObjectsV2Command, HeadObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { logger } from '@/lib/logger';
+import { getPublicUrl } from '@/lib/storage-url';
 
 const s3Client = new S3Client({
   region: 'eu-west-1',
@@ -107,17 +108,7 @@ export async function getFileUrl(fileName: string): Promise<string> {
   return getSignedUrl(s3Client, command, { expiresIn: 3600 });
 }
 
-export function getPublicUrl(fileName: string): string {
-  const baseUrl = process.env.S3_PUBLIC_URL || 
-    process.env.S3_ENDPOINT?.replace('/storage/v1/s3', '') || 
-    'https://pnxgazfljyrlmsrzdzgm.storage.supabase.co';
-  
-  if (fileName.startsWith(`${BUCKET}/`)) {
-    fileName = fileName.replace(`${BUCKET}/`, '');
-  }
-  
-  return `${baseUrl}/storage/v1/object/public/${BUCKET}/${encodeURIComponent(fileName)}`;
-}
+export { getPublicUrl };
 
 export async function renameFile(oldName: string, newName: string): Promise<void> {
   const oldKey = buildS3Key(oldName);

@@ -28,7 +28,7 @@ import {
   FolderOpen,
 } from "lucide-react";
 import { toast } from "sonner";
-import { getPublicUrl } from "@/utils/s3";
+import { getPublicUrl } from "@/lib/storage-url";
 
 interface UploadedFile {
   name: string;

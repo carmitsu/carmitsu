@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import Sidebar from "./components/Sidebar";
+import Sidebar from './components/Sidebar';
 
 export default function PanelLayout({
   children,
@@ -11,7 +11,9 @@ export default function PanelLayout({
 }) {
   const pathname = usePathname();
   const router = useRouter();
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(
+    pathname === '/panel' ? true : null
+  );
 
   useEffect(() => {
     if (pathname === '/panel') {
@@ -19,24 +21,44 @@ export default function PanelLayout({
       return;
     }
 
-    const token = sessionStorage.getItem('panel_token');
-    const adminToken = process.env.NEXT_PUBLIC_ADMIN_PANEL_TOKEN;
+    let cancelled = false;
 
-    if (!token || token !== adminToken) {
-      sessionStorage.removeItem('panel_token');
-      router.push('/panel');
-      return;
+    async function verifySession() {
+      try {
+        const response = await fetch('/api/auth/session', {
+          cache: 'no-store',
+        });
+
+        if (cancelled) return;
+
+        if (!response.ok) {
+          sessionStorage.removeItem('panel_token');
+          setIsAuthenticated(false);
+          router.replace('/panel');
+          return;
+        }
+
+        setIsAuthenticated(true);
+      } catch {
+        if (cancelled) return;
+        setIsAuthenticated(false);
+        router.replace('/panel');
+      }
     }
 
-    setIsAuthenticated(true);
-  }, [pathname, router]);
+    verifySession();
 
-  if (isAuthenticated === false) {
-    return null;
-  }
+    return () => {
+      cancelled = true;
+    };
+  }, [pathname, router]);
 
   if (pathname === '/panel') {
     return <>{children}</>;
+  }
+
+  if (isAuthenticated !== true) {
+    return null;
   }
 
   return (

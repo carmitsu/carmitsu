@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/utils/supabase';
+import { supabase, supabaseAdmin } from '@/utils/supabase';
 import { getTokenFromRequest, validateToken } from '@/lib/api-auth';
 import { handleApiError } from '@/lib/errors';
 import { logger } from '@/lib/logger';
@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
       filesCount: files.length,
     });
 
-    const { data, error } = await supabase
+    const { data, error } = await supabaseAdmin
       .from('realizations')
       .insert([{
         title,

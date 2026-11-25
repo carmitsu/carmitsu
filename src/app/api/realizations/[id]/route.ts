@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/utils/supabase';
+import { supabase, supabaseAdmin } from '@/utils/supabase';
 import { getTokenFromRequest, validateToken } from '@/lib/api-auth';
 import { handleApiError } from '@/lib/errors';
 import { logger } from '@/lib/logger';
@@ -111,7 +111,7 @@ export async function PUT(
       title,
     });
 
-    const { data, error } = await supabase
+    const { data, error } = await supabaseAdmin
       .from('realizations')
       .update({
         title,
@@ -181,7 +181,7 @@ export async function DELETE(
       id,
     });
 
-    const { data: realization, error: fetchError } = await supabase
+    const { data: realization, error: fetchError } = await supabaseAdmin
       .from('realizations')
       .select('files')
       .eq('id', id)
@@ -232,7 +232,7 @@ export async function DELETE(
       failedFiles: failedFiles.length,
     });
 
-    const { error: deleteError } = await supabase
+    const { error: deleteError } = await supabaseAdmin
       .from('realizations')
       .delete()
       .eq('id', id);

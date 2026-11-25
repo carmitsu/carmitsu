@@ -3,8 +3,10 @@
 import { createContext, useContext } from 'react';
 import { Lang } from '@/utils/language';
 
+export type SiteLanguage = 'pl' | 'en' | 'de' | 'no' | 'se';
+
 interface LanguageContextType {
-  language: 'pl' | 'en';
+  language: SiteLanguage;
   data: Lang;
 }
 
@@ -19,7 +21,7 @@ export function LanguageProvider({
   data 
 }: { 
   children: React.ReactNode; 
-  language: 'pl' | 'en'; 
+  language: SiteLanguage; 
   data: Lang;
 }) {
   return (

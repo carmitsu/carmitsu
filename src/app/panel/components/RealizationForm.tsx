@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { getPublicUrl } from "@/utils/s3";
+import { getPublicUrl } from "@/lib/storage-url";
 import { Realization, FileItem } from "../types";
 import UniversalFileUpload from "@/components/panel/UniversalFileUpload";
 import {

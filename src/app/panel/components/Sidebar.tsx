@@ -82,7 +82,8 @@ export default function Sidebar() {
       <div className="p-2 border-t border-slate-700/50 space-y-1">
         <Tooltip content="Strona główna" placement="right" isDisabled={!collapsed}>
           <button
-            onClick={() => {
+            onClick={async () => {
+              await fetch('/api/auth/logout', { method: 'POST' }).catch(() => {});
               sessionStorage.removeItem('panel_token');
               window.location.href = '/';
             }}

@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { StorageFile } from "@/hooks/useStorage";
-import { getPublicUrl } from "@/utils/s3";
+import { getPublicUrl } from "@/lib/storage-url";
 import { 
   Image as ImageIcon, 
   Video, 

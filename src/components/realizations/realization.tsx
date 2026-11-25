@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Skeleton, useDisclosure, Modal, ModalContent, ModalHeader, ModalBody } from "@heroui/react";
 import Image from "next/image";
 import { Realization } from "@/utils/realizations";
+import { getPublicUrl } from "@/lib/storage-url";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Play } from "lucide-react";
 
@@ -18,7 +19,7 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
   const [videoThumbnail, setVideoThumbnail] = useState<string | null>(null);
   const [thumbnailLoading, setThumbnailLoading] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // If the site language is not Polish, force English for realizations
@@ -29,10 +30,8 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
   const allFiles = realization.files || [];
   const cardFile = allFiles[cardFileIndex];
   const modalFile = allFiles[modalFileIndex];
-  
-  const getFileUrl = (fileName: string) => {
-    return `https://pnxgazfljyrlmsrzdzgm.storage.supabase.co/storage/v1/object/public/realizations/${encodeURIComponent(fileName)}`;
-  };
+
+  const getFileUrl = (fileName: string) => getPublicUrl(fileName);
 
   const isImage = (type: string) => type === 'image';
   const isVideo = (type: string) => type === 'video';
@@ -56,11 +55,11 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
     video.src = getFileUrl(fileName);
     video.crossOrigin = 'anonymous';
     video.preload = 'metadata';
-    
+
     video.onloadedmetadata = () => {
       video.currentTime = Math.min(1, video.duration * 0.1);
     };
-    
+
     video.onseeked = () => {
       const canvas = document.createElement('canvas');
       canvas.width = 320;
@@ -72,7 +71,7 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
       }
       setThumbnailLoading(false);
     };
-    
+
     video.onerror = () => {
       setThumbnailLoading(false);
     };
@@ -114,8 +113,8 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
           ) : cardFile && isVideo(cardFile.type) ? (
             <div className="w-full h-full bg-black flex items-center justify-center relative rounded-xl overflow-hidden">
               {videoThumbnail ? (
-                <img 
-                  src={videoThumbnail} 
+                <img
+                  src={videoThumbnail}
                   alt={title}
                   className="w-full h-full object-cover"
                 />
@@ -139,7 +138,7 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
               <span className="text-slate-400">Brak pliku</span>
             </div>
           )}
-          
+
           {allFiles.length > 1 && (
             <div className="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full">
               {allFiles.length} plików
@@ -182,7 +181,7 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
                   unoptimized
                 />
               )}
-              
+
               {modalFile && isVideo(modalFile.type) && (
                 <video
                   ref={videoRef}
@@ -197,7 +196,7 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
                   }}
                 />
               )}
-              
+
               {allFiles.length > 1 && (
                 <>
                   <button
@@ -220,9 +219,8 @@ export default function RealizationCard({ realization }: RealizationCardProps) {
                           setModalFileIndex(index);
                           setVideoThumbnail(null);
                         }}
-                        className={`w-3 h-3 rounded-full transition-colors ${
-                          index === modalFileIndex ? 'bg-white' : 'bg-white/50 hover:bg-white/70'
-                        }`}
+                        className={`w-3 h-3 rounded-full transition-colors ${index === modalFileIndex ? 'bg-white' : 'bg-white/50 hover:bg-white/70'
+                          }`}
                       />
                     ))}
                   </div>

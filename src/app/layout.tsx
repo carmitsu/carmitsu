@@ -4,7 +4,7 @@ import {Providers} from "./providers";
 import {Toaster} from "sonner";
 import React from "react";
 import {getLanguage} from "@/utils/language";
-import {LanguageProvider} from "@/contexts/LanguageContext";
+import {LanguageProvider, type SiteLanguage} from "@/contexts/LanguageContext";
 import Script from "next/script";
 import {GoogleTagManager, GoogleAnalytics} from "@next/third-parties/google";
 import Baner from "@/components/baner";
@@ -114,12 +114,14 @@ export default async function RootLayout({children,}: Readonly<{
   return (
     <html lang={data.language || "en"} className='dark scroll-smooth'>
     <head>
-      <Script
-        id="cloudflare-analytics"
-        strategy="afterInteractive"
-        src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon={JSON.stringify({token: process.env.C_ANALYTICS || ""})}
-      />
+      {process.env.C_ANALYTICS && (
+        <Script
+          id="cloudflare-analytics"
+          strategy="afterInteractive"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon={JSON.stringify({token: process.env.C_ANALYTICS})}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -158,7 +160,7 @@ export default async function RootLayout({children,}: Readonly<{
     </head>
     <body>
     <Providers>
-      <LanguageProvider language={data.language as 'pl' | 'en'} data={data}>
+      <LanguageProvider language={(data.language as SiteLanguage) || 'en'} data={data}>
         {children}
         <Baner/>
       </LanguageProvider>
